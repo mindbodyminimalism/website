@@ -11,8 +11,13 @@ function calculateBMI() {
     const bmi = weightInKg / (heightInMeters * heightInMeters);
 
 
-    // Display BMI
-    document.getElementById('result').innerHTML = `Your BMI is: ${bmi.toFixed(2)}`;
+        if (bmi > 23.9) {
+            document.getElementById('result').innerHTML = `Your BMI is high at: ${bmi.toFixed(2)}`;
+        } else if (bmi < 18.5) {
+            document.getElementById('result').innerHTML = `Your BMI is low at: ${bmi.toFixed(2)}`;
+        } else {
+            document.getElementById('result').innerHTML = `Your BMI is healthy at: ${bmi.toFixed(2)}`;
+        }
 }
 
 // Add event listener to the form
