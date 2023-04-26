@@ -179,4 +179,11 @@
     document.getElementById("prohadd").innerHTML = prohadd.toFixed();
     document.getElementById("elihadd").innerHTML = elihadd.toFixed();
 
+    document.getElementById("begrun").innerHTML = "11 min";
+    document.getElementById("intrun").innerHTML = "10 min";
+    document.getElementById("advrun").innerHTML = "9 min";
+    document.getElementById("masrun").innerHTML = "8 min";
+    document.getElementById("prorun").innerHTML = "7 min";
+    document.getElementById("elirun").innerHTML = "6 min";
+
 }

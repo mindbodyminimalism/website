@@ -94,6 +94,7 @@
     var prohadd = calcNumbers(weight, 1.75);
     var elihadd = calcNumbers(weight, 2.5);
 
+
     // Display to Chart
     document.getElementById("begCurl").innerHTML = begCurl.toFixed();
     document.getElementById("intCurl").innerHTML = intCurl.toFixed();
@@ -178,5 +179,12 @@
     document.getElementById("mashadd").innerHTML = mashadd.toFixed();
     document.getElementById("prohadd").innerHTML = prohadd.toFixed();
     document.getElementById("elihadd").innerHTML = elihadd.toFixed();
+
+    document.getElementById("begrun").innerHTML = "10 min";
+    document.getElementById("intrun").innerHTML = "9 min";
+    document.getElementById("advrun").innerHTML = "8 min";
+    document.getElementById("masrun").innerHTML = "7 min";
+    document.getElementById("prorun").innerHTML = "6 min";
+    document.getElementById("elirun").innerHTML = "5 min";
 
 }

@@ -197,6 +197,7 @@ body {
 table {
     border-collapse: collapse;
     width: 100%;
+    table-layout: fixed;
 }
 
 th, td {
@@ -204,6 +205,7 @@ th, td {
     padding: 2px;
     color: black;
     width: fit-content;
+    overflow: auto;
     border: 1px solid black;
 }
 
