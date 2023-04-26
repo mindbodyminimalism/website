@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/main.css" />
 <body>
 <h1>Fitness Calculator</h1>
+
 <form id="bmi-form">
   <div class="row">
     <div class="input-container col">
@@ -21,13 +22,25 @@
       <input type="number" id="weight" value="0" min="60" max="600">
       <label for="weight" class="label">lbs</label>
     </div>
+    <div class="input-container col">
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
   </div>
+
   <div class="row">
     <button class="button button1 no-print col" type="submit" onclick="calculate()">Calculate</button>
   </div>
-</form>
-<div id="result"></div>
 
+</form>
+
+<div class="row">
+<div id="result"></div>
+</div>
+
+<div class="row">
 <table>
   <thead>
   <tr>
@@ -56,11 +69,6 @@
       <div class="tooltip"> Elite
       </div>
     </th>
-    <th>
-      <div class="tooltip"> Olympian
-        <span class="tooltiptext">"Qualifying Olympic Event or similar"</span>
-      </div>
-    </th>
   </tr>
   </thead>
   <tbody>
@@ -76,7 +84,6 @@
     <td id="masCurl"></td>
     <td id="proCurl"></td>
     <td id="eliCurl"></td>
-    <td id="olyCurl"></td>
   </tr>
   <tr>
     <th>Pulldown Machine</th>
@@ -86,7 +93,6 @@
     <td id="maspdown"></td>
     <td id="propdown"></td>
     <td id="elipdown"></td>
-    <td id="olypdown"></td>
   </tr>
   <tr>
     <th>Rowing Machine</th>
@@ -96,7 +102,6 @@
     <td id="masrow"></td>
     <td id="prorow"></td>
     <td id="elirow"></td>
-    <td id="olyrow"></td>
   </tr>
   <tr>
     <th>Bench Press</th>
@@ -106,7 +111,6 @@
     <td id="masBench"></td>
     <td id="proBench"></td>
     <td id="eliBench"></td>
-    <td id="olyBench"></td>
   </tr>
   <tr>
     <th>Lateral Raises</th>
@@ -116,7 +120,6 @@
     <td id="maslatr"></td>
     <td id="prolatr"></td>
     <td id="elilatr"></td>
-    <td id="olylatr"></td>
   </tr>
   <tr>
     <th>Tricep Press Machine</th>
@@ -126,7 +129,6 @@
     <td id="mastrip"></td>
     <td id="protrip"></td>
     <td id="elitrip"></td>
-    <td id="olytrip"></td>
   </tr>
   <tr>
     <th>DumbbellShrugs</th>
@@ -136,7 +138,6 @@
     <td id="masshrug"></td>
     <td id="proshrug"></td>
     <td id="elishrug"></td>
-    <td id="olyshrug"></td>
   </tr>
   <tr>
     <th>Chest Fly Machine</th>
@@ -146,7 +147,6 @@
     <td id="mascfly"></td>
     <td id="procfly"></td>
     <td id="elicfly"></td>
-    <td id="olycfly"></td>
   </tr>
   <tr>
     <th>Leg Press</th>
@@ -156,7 +156,6 @@
     <td id="maslegp"></td>
     <td id="prolegp"></td>
     <td id="elilegp"></td>
-    <td id="olylegp"></td>
   </tr>
   <tr>
     <th>Calf Extention Machine</th>
@@ -166,7 +165,6 @@
     <td id="mascext"></td>
     <td id="procext"></td>
     <td id="elicext"></td>
-    <td id="olycext"></td>
   </tr>
   <tr>
     <th>Hip Abductor</th>
@@ -176,7 +174,6 @@
     <td id="mashabd"></td>
     <td id="prohabd"></td>
     <td id="elihabd"></td>
-    <td id="olyhabd"></td>
   </tr>
   <tr>
     <th>Hip adductor</th>
@@ -186,7 +183,6 @@
     <td id="mashadd"></td>
     <td id="prohadd"></td>
     <td id="elihadd"></td>
-    <td id="olyhadd"></td>
   </tr>
   <tr>
     <th>1 Mile Times</th>
@@ -194,11 +190,11 @@
     <td>9 minutes</td>
     <td>8 minutes</td>
     <td>7 minutes</td>
+    <td>6 minutes</td>
     <td>5 minutes</td>
-    <td>5 minutes</td>
-    <td>4 minutes</td>
   </tr>
 </table>
+</div>
 
   <div class="print no-print">
     <input type="button" value="Print Page" onclick="printPage()">
@@ -206,8 +202,21 @@
 
 
 <!-- Scripts -->
+<script>
+  function calculate() {
+    var sex = document.getElementById("sex").value;
+    if (sex === "male") {
+      calculateMale();
+    } else if (sex === "female") {
+      calculateFemale();
+    } else {
+      alert("Please select a valid sex");
+    }
+  }
+</script>
 <script src="js/calculateBMI.js"></script>
-<script src="js/liftingranks.js"></script>
+<script src="js/liftingranks_male.js"></script>
+<script src="js/liftingranks_female.js"></script>
 
 <script>
   function printPage() {
