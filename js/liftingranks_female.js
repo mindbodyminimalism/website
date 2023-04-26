@@ -39,11 +39,11 @@
     var eliBench = calcNumbers(weight, 1.4);
 
     var beglatr = calcNumbers(weight, .04);
-    var intlatr = calcNumbers(weight, .08);
-    var advlatr = calcNumbers(weight, .1);
-    var maslatr = calcNumbers(weight, .14);
-    var prolatr = calcNumbers(weight, .2);
-    var elilatr = calcNumbers(weight, .3);
+    var intlatr = calcNumbers(weight, .06);
+    var advlatr = calcNumbers(weight, .08);
+    var maslatr = calcNumbers(weight, .1);
+    var prolatr = calcNumbers(weight, .12);
+    var elilatr = calcNumbers(weight, .16);
 
     var begtrip = calcNumbers(weight, .6);
     var inttrip = calcNumbers(weight, .8);
