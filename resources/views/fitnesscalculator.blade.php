@@ -9,8 +9,21 @@
 
 </head>
 <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+
 <body>
-<h1>Fitness Calculator</h1>
+
+<div class="flex-center position-ref low-height">
+    <div class="content">
+        <div class="title m-b-md">
+            Fitness Calculator
+        </div>
+
+        <div class="links">
+            <a href="{{ url('/') }}">Home</a>
+            <a href="{{ url('/about') }}">about</a>
+        </div>
+    </div>
+</div>
 
 <form id="bmi-form">
     <div class="row">
