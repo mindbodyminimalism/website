@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
+<div class="flex-center position-ref low-height">
 
     @if (Route::has('login') && Auth::check())
         <div class="top-right links">
@@ -48,5 +48,26 @@
         </div>
     </div>
 </div>
+<div class="row container">
+    <div class="col">
+        <p>Welcome to Mind Body Minimalism, your ultimate guide to living a simpler, happier, and healthier life. Our
+            web app is designed to help you streamline your daily routines and make the most of your time, energy, and resources.</p>
+        <p>Mind Body Minimalism is designed to help relieve the burden of decision-making in our daily lives. By providing
+            personalized recommendations we can help simplify and streamline our routines, reducing the mental load of decision-making.
+            By focusing on the essentials and eliminating the excess, we can free ourselves from stress, clutter, and distractions,
+            and create space for what truly matters in life. Whether you want to improve your diet, boost your fitness,
+            calm your mind, or enhance your sleep, we've got you covered.</p>
+        <p>Our platform offers a variety of features and tools to support your journey towards minimalism and wellness.
+            You can track your meals, water intake, and exercise habits, and receive personalized recommendations and insights
+            based on your goals and preferences. You can also access a library of guided meditations, breathing exercises,
+            and relaxation techniques, to help you find peace and balance amidst the chaos of everyday life.</p>
+        <p>Our tools are designed to help us simplify and streamline our lives, freeing up mental and physical resources
+            to focus on what truly matters. By reducing the burden of decision-making, we can reduce stress, improve our
+            well-being, and live more intentionally and joyfully.</p>
+        <p>Sign up for Mind Body Minimalism today and start living your best life with less.</p>
+    </div>
+</div>
+
+
 </body>
 </html>

@@ -43,13 +43,14 @@
     @endif
 
     <div class="content">
-        <div class="title m-b-md">
+        <div class="row title m-b-md">
             Mind Body Minimalism
         </div>
 
-        <div class="links">
+        <div class="row container links">
             <a href="{{ url('/about') }}">about</a>
-            <a href="{{ url('/fitnesscalculator') }}">Calculator</a>
+            <a href="{{ url('/body') }}">body</a>
+            <a href="{{ url('/mind') }}">mind</a>
         </div>
     </div>
 </div>

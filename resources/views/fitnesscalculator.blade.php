@@ -20,7 +20,7 @@
 
         <div class="links">
             <a href="{{ url('/') }}">Home</a>
-            <a href="{{ url('/about') }}">about</a>
+            <a href="{{ url('/body') }}">body</a>
         </div>
     </div>
 </div>
