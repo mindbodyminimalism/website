@@ -24,8 +24,7 @@
     </style>
 </head>
 <body>
-<div class="flex-center position-ref low-height">
-
+<div class="row auth-menu">
     @if (Route::has('login') && Auth::check())
         <div class="top-right links">
             <a href="{{ url('/home') }}">Dashboard</a>
@@ -36,6 +35,9 @@
             <a href="{{ url('/register') }}">Register</a>
         </div>
     @endif
+</div>
+
+<div class="flex-center position-ref low-height">
 
     <div class="content">
         <div class="title m-b-md">

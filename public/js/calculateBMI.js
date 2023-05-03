@@ -18,6 +18,15 @@ function calculateBMI() {
         } else {
             document.getElementById('result').innerHTML = `Your BMI is healthy at: ${bmi.toFixed(2)}`;
         }
+
+    //Sends form data to PHP scrip
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', '{{ route("update-user-info") }}');
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+        // Handle the response from the PHP script, if necessary
+    };
+    xhr.send('feet=' + feet + '&inches=' + inches + '&weight=' + weight);
 }
 
 // Add event listener to the form
@@ -26,3 +35,4 @@ form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission from reloading the page
     calculateBMI(); // Calculate and display BMI
 });
+

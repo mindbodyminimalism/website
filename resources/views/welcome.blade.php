@@ -21,16 +21,10 @@
             height: 100vh;
             margin: 0;
         }
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
     </style>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-
+<div class="row auth-menu">
     @if (Route::has('login') && Auth::check())
         <div class="top-right links">
             <a href="{{ url('/home') }}">Dashboard</a>
@@ -41,6 +35,9 @@
             <a href="{{ url('/register') }}">Register</a>
         </div>
     @endif
+</div>
+
+<div class="row flex-center position-ref full-height">
 
     <div class="content">
         <div class="row title m-b-md">

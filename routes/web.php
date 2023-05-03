@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserInfoUpdate;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +33,10 @@ Route::get('/mind', function () {
 Route::get('/fitnesscalculator', function () {
     return view('fitnesscalculator');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/update-user-info', 'App\Http\Controllers\UserInfoUpdate@update');
+

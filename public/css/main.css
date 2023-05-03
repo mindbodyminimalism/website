@@ -19,6 +19,11 @@
     padding-left: 15px;
 }
 
+.halfcolumn {
+    flex-basis: 50%;
+    display: flex;
+}
+
 @media (min-width: 576px) {
     .col {
         float: left;
@@ -93,6 +98,13 @@ input[type="number"] {
 .content {
     text-align: center;
 }
+.auth-menu {
+    margin-bottom: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 .links > a {
     color: #636b6f;
     padding: 5% 10%;
@@ -123,6 +135,7 @@ input[type="number"] {
 body {
     background: #f0f4f4;
     color: black;
+    width: 100%;
     font-size: 15pt;
     line-height: 1.85em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -214,7 +227,7 @@ body {
 }
 
 .full-height {
-    height: 100vh;
+    height: 100%;
 }
 
 .low-height {

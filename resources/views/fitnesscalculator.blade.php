@@ -11,6 +11,18 @@
 <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
 
 <body>
+<div class="row auth-menu">
+    @if (Route::has('login') && Auth::check())
+        <div class="top-right links">
+            <a href="{{ url('/home') }}">Dashboard</a>
+        </div>
+    @elseif (Route::has('login') && !Auth::check())
+        <div class="top-right links">
+            <a href="{{ url('/login') }}">Login</a>
+            <a href="{{ url('/register') }}">Register</a>
+        </div>
+    @endif
+</div>
 
 <div class="flex-center position-ref low-height">
     <div class="content">
