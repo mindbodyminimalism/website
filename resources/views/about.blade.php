@@ -46,12 +46,11 @@
 
         <div class="links">
             <a href="{{ url('/') }}">Home</a>
-            <a href="{{ url('/fitnesscalculator') }}">Calculator</a>
         </div>
     </div>
 </div>
 <div class="row container">
-    <div class="col">
+    <div class="sub-col">
         <p>Welcome to Mind Body Minimalism, your ultimate guide to living a simpler, happier, and healthier life. Our
             web app is designed to help you streamline your daily routines and make the most of your time, energy, and resources.</p>
         <p>Mind Body Minimalism is designed to help relieve the burden of decision-making in our daily lives. By providing

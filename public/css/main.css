@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 
+
 .container {
     display: flex;
     justify-content: center;
@@ -17,6 +18,15 @@
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+/* Sub-column with larger margins */
+.sub-col {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px; /* Set the maximum width for the column */
+    padding-right: 4vw;
+    padding-left: 4vw;
 }
 
 .halfcolumn {
@@ -70,6 +80,23 @@
         width: 100%;
     }
 }
+
+.pic-container {
+    display: flex;
+    justify-content: space-between; /* Change to 'space-between' to keep equal margins between columns */
+    max-width: 1000px;
+    margin: 0 auto; /* This will center the entire container horizontally */
+    padding: 0 4vw; /* Set the left and right padding to create the desired margins */
+}
+
+.pic-col {
+    box-sizing: border-box;
+    flex: 1; /* Allow the columns to grow and shrink equally */
+    padding: 15px;
+    text-align: center;
+}
+
+
 
 form {
 }
@@ -252,8 +279,34 @@ table {
 .title {
     font-size: 6vw;
     min-font-size: 32px;
-    max-font-size: 84px;
+    max-font-size: 66px;
     white-space: nowrap;
+    margin: 20px;
+}
+
+/* Screen size less than 600px */
+@media screen and (max-width: 599px) {
+    .title {
+        font-size: calc(26px + 4vw);
+        margin: 10px;
+    }
+}
+
+/* Screen size between 600px and 899px */
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    .title {
+        font-size: calc(26px + 5vw);
+        margin: 30px;
+    }
+}
+
+/* Screen size greater than or equal to 1200px */
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 6vw;
+        margin: 60px;
+        font-size: 84px;
+    }
 }
 
 th, td {

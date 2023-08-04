@@ -48,8 +48,40 @@
         </div>
     </div>
 </div>
+<div class="pic-container">
+    <div class="pic-col">
+        <p>
+            <a href="{{ url('/') }}" style="color: darkslategray;">
+                <i class="fas fa-5x fa-book"></i>
+            </a>
+        </p>
+        <p>
+            Learn
+        </p>
+    </div>
+    <div class="pic-col">
+        <p>
+            <a href="{{ url('/') }}" style="color: darkslategray;">
+                <i class="fas fa-5x fa-palette"></i>
+            </a>
+        </p>
+        <p>
+            Create
+        </p>
+    </div>
+    <div class="pic-col">
+        <p>
+            <a href="{{ url('/') }}" style="color: darkslategray;">
+                <i class="fas fa-5x fa-brain"></i>
+            </a>
+        </p>
+        <p>
+            Meditate
+        </p>
+    </div>
+</div>
 <div class="row container">
-    <div class="col">
+    <div class="sub-col">
         <p>Learn, Create, and Meditate. When we are mentally fatigued from making too many decisions, our ability
             to concentrate and learn can be compromised. In contrast, when we reduce decision-making, we can improve our
             ability to focus and absorb new information. Before approaching these tools make sure you have balanced your

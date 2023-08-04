@@ -50,8 +50,34 @@
         </div>
     </div>
 </div>
+<div class="pic-container">
+    <div class="pic-col">
+        <p>
+            <i class="fas fa-5x fa-utensils"></i>
+        </p>
+        <p>
+            Eat
+        </p>
+    </div>
+    <div class="pic-col">
+        <p>
+            <i class="fas fa-5x fa-running"></i>
+        </p>
+        <p>
+            Exercise
+        </p>
+    </div>
+    <div class="pic-col">
+        <p>
+            <i class="fas fa-5x fa-bed"></i>
+        </p>
+        <p>
+            Sleep
+        </p>
+    </div>
+</div>
 <div class="row container">
-    <div class="col">
+    <div class="sub-col">
         <p>Eat, Exercise, Sleep. Reduced decision fatigue can have a significant positive impact on our eating, working out, and sleeping habits.
             Decision fatigue occurs when we make a large number of decisions over a period of time, which can lead to mental
             exhaustion and reduced decision-making ability.</p>
