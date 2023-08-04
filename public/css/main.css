@@ -96,7 +96,13 @@
     text-align: center;
 }
 
+a {
+    color: darkslategray;
+}
 
+a:hover {
+    color: black; /* Replace "red" with the desired hover color */
+}
 
 form {
 }

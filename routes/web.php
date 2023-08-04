@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UserInfoUpdate;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,30 @@ Route::get('/mind', function () {
 
 Route::get('/fitnesscalculator', function () {
     return view('fitnesscalculator');
+});
+
+Route::get('/body_pages/eat', function () {
+    return view('body_pages.eat');
+});
+
+Route::get('/body_pages/exercise', function () {
+    return view('body_pages.exercise');
+});
+
+Route::get('/body_pages/sleep', function () {
+    return view('body_pages.sleep');
+});
+
+Route::get('/mind_pages/learn', function () {
+    return view('mind_pages.learn');
+});
+
+Route::get('/mind_pages/create', function () {
+    return view('mind_pages.create');
+});
+
+Route::get('/mind_pages/meditate', function () {
+    return view('mind_pages.meditate');
 });
 
 Auth::routes();

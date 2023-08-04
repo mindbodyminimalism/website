@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About</title>
+    <title>Body</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -46,14 +46,15 @@
 
         <div class="links">
             <a href="{{ url('/') }}">Home</a>
-            <a href="{{ url('/fitnesscalculator') }}">Calculator</a>
         </div>
     </div>
 </div>
 <div class="pic-container">
     <div class="pic-col">
         <p>
-            <i class="fas fa-5x fa-utensils"></i>
+            <a href="{{ url('/body_pages/eat') }}">
+                <i class="fas fa-5x fa-utensils"></i>
+            </a>
         </p>
         <p>
             Eat
@@ -61,7 +62,9 @@
     </div>
     <div class="pic-col">
         <p>
-            <i class="fas fa-5x fa-running"></i>
+            <a href="{{ url('/body_pages/exercise') }}">
+                <i class="fas fa-5x fa-running"></i>
+            </a>
         </p>
         <p>
             Exercise
@@ -69,7 +72,9 @@
     </div>
     <div class="pic-col">
         <p>
-            <i class="fas fa-5x fa-bed"></i>
+            <a href="{{ url('/body_pages/sleep') }}">
+                <i class="fas fa-5x fa-bed"></i>
+            </a>
         </p>
         <p>
             Sleep

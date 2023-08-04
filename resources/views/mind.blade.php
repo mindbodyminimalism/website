@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About</title>
+    <title>Mind</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -51,7 +51,7 @@
 <div class="pic-container">
     <div class="pic-col">
         <p>
-            <a href="{{ url('/') }}" style="color: darkslategray;">
+            <a href="{{ url('/mind_pages/learn') }}">
                 <i class="fas fa-5x fa-book"></i>
             </a>
         </p>
@@ -61,7 +61,7 @@
     </div>
     <div class="pic-col">
         <p>
-            <a href="{{ url('/') }}" style="color: darkslategray;">
+            <a href="{{ url('/mind_pages/create') }}">
                 <i class="fas fa-5x fa-palette"></i>
             </a>
         </p>
@@ -71,7 +71,7 @@
     </div>
     <div class="pic-col">
         <p>
-            <a href="{{ url('/') }}" style="color: darkslategray;">
+            <a href="{{ url('/mind_pages/meditate') }}">
                 <i class="fas fa-5x fa-brain"></i>
             </a>
         </p>
