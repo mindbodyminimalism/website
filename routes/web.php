@@ -31,8 +31,12 @@ Route::get('/mind', function () {
     return view('mind');
 });
 
-Route::get('/fitnesscalculator', function () {
-    return view('fitnesscalculator');
+Route::get('/essence_pages/essence', function () {
+    return view('essence_pages.essence');
+});
+
+Route::get('/body_pages/fitnesscalculator', function () {
+    return view('body_pages.fitnesscalculator');
 });
 
 Route::get('/body_pages/eat', function () {
@@ -57,6 +61,22 @@ Route::get('/mind_pages/create', function () {
 
 Route::get('/mind_pages/meditate', function () {
     return view('mind_pages.meditate');
+});
+
+Route::get('/essence_pages/express', function () {
+    return view('essence_pages.express');
+});
+
+Route::get('/essence_pages/listen', function () {
+    return view('essence_pages.listen');
+});
+
+Route::get('/essence_pages/contemplate', function () {
+    return view('essence_pages.contemplate');
+});
+
+Route::get('/essence_pages/mood_tracker', function () {
+    return view('essence_pages.mood_tracker');
 });
 
 Auth::routes();

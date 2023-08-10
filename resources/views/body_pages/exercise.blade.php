@@ -46,7 +46,7 @@ html, body {
 
             <div class="links">
                 <a href="{{ url('/body') }}">Back</a>
-                <a href="{{ url('/fitnesscalculator') }}">Calculator</a>
+                <a href="{{ url('/body_pages/fitnesscalculator') }}">Calculator</a>
             </div>
         </div>
     </div>
@@ -64,7 +64,7 @@ html, body {
                 lead an active and vibrant life.
             </p>
             <p>
-                Start by trying our <a href="{{ url('/fitnesscalculator') }}">fitness calculator</a> to help you set goals
+                Start by trying our <a href="{{ url('/body_pages/fitnesscalculator') }}">fitness calculator</a> to help you set goals
                 for yourself!
             </p>
 

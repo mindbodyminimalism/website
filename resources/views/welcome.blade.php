@@ -41,13 +41,13 @@
 
     <div class="content">
         <div class="row title m-b-md">
-            Mind Body Minimalism
+            <a href="{{ url('/about') }}" style="text-decoration: none;">Mind Body Minimalism</a>
         </div>
 
         <div class="row container links">
-            <a href="{{ url('/about') }}">about</a>
             <a href="{{ url('/body') }}">body</a>
             <a href="{{ url('/mind') }}">mind</a>
+            <a href="{{ url('/essence_pages/essence') }}">essence</a>
         </div>
     </div>
 </div>

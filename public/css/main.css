@@ -34,6 +34,12 @@
     display: flex;
 }
 
+p {
+    color:#000;
+    /*font-weight: bold;*/
+  }
+
+
 @media (min-width: 576px) {
     .col {
         float: left;
@@ -101,7 +107,12 @@ a {
 }
 
 a:hover {
-    color: black; /* Replace "red" with the desired hover color */
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+a:active {
+    color: dimgray;
 }
 
 form {
@@ -150,6 +161,16 @@ input[type="number"] {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+ .links a:hover {
+     color: black;
+     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+ }
+
+.links a:active {
+    color: dimgray;
+}
+
  .print {
     display: flex;
     flex-direction: column;
@@ -173,6 +194,7 @@ body {
     line-height: 1.85em;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
+    margin-bottom: 200px;
 }
 
 .button {
@@ -338,3 +360,39 @@ td {
 tr:nth-child(even) {
     background-color: slategrey;
 }
+
+/* Mood Tracker CSS */
+
+.mood.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.mood .row {
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.mood .col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.mood .sub-col {
+    flex: 1; /* This will allow the flex items to grow and shrink in order to fit the container */
+    min-width: 200px; /* This is the minimum width of the column. Adjust accordingly */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Center items horizontally */
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* This will center the sub-columns horizontally */
+}
+
+
+

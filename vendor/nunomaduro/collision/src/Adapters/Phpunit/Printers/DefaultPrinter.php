@@ -7,12 +7,12 @@ namespace NunoMaduro\Collision\Adapters\Phpunit\Printers;
 use NunoMaduro\Collision\Adapters\Phpunit\ConfigureIO;
 use NunoMaduro\Collision\Adapters\Phpunit\State;
 use NunoMaduro\Collision\Adapters\Phpunit\Style;
+use NunoMaduro\Collision\Adapters\Phpunit\Support\ResultReflection;
 use NunoMaduro\Collision\Adapters\Phpunit\TestResult;
 use NunoMaduro\Collision\Exceptions\ShouldNotHappen;
 use NunoMaduro\Collision\Exceptions\TestOutcome;
 use Pest\Result;
 use PHPUnit\Event\Code\TestMethod;
-use PHPUnit\Event\Code\Throwable;
 use PHPUnit\Event\Code\ThrowableBuilder;
 use PHPUnit\Event\Test\BeforeFirstTestMethodErrored;
 use PHPUnit\Event\Test\ConsideredRisky;
@@ -28,6 +28,7 @@ use PHPUnit\Event\Test\PhpNoticeTriggered;
 use PHPUnit\Event\Test\PhpunitWarningTriggered;
 use PHPUnit\Event\Test\PhpWarningTriggered;
 use PHPUnit\Event\Test\PreparationStarted;
+use PHPUnit\Event\Test\PrintedUnexpectedOutput;
 use PHPUnit\Event\Test\Skipped;
 use PHPUnit\Event\Test\WarningTriggered;
 use PHPUnit\Event\TestRunner\DeprecationTriggered as TestRunnerDeprecationTriggered;
@@ -41,6 +42,7 @@ use PHPUnit\TextUI\Configuration\Registry;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\OutputInterface;
+use Throwable;
 
 /**
  * @internal
@@ -133,6 +135,14 @@ final class DefaultPrinter
     public function setDecorated(bool $decorated): void
     {
         $this->output->setDecorated($decorated);
+    }
+
+    /**
+     * Listen to the runner execution started event.
+     */
+    public function testPrintedUnexpectedOutput(PrintedUnexpectedOutput $printedUnexpectedOutput): void
+    {
+        $this->output->write($printedUnexpectedOutput->output());
     }
 
     /**
@@ -359,7 +369,9 @@ final class DefaultPrinter
     {
         $result = Facade::result();
 
-        if (Facade::result()->numberOfTests() === 0) {
+
+
+        if (ResultReflection::numberOfTests(Facade::result()) === 0) {
             $this->output->writeln([
                 '',
                 '  <fg=white;options=bold;bg=blue> INFO </> No tests found.',
@@ -393,7 +405,7 @@ final class DefaultPrinter
     /**
      * Reports the given throwable.
      */
-    public function report(\Throwable $throwable): void
+    public function report(Throwable $throwable): void
     {
         $this->style->writeError(ThrowableBuilder::from($throwable));
     }
