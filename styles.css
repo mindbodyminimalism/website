@@ -123,3 +123,12 @@ body, html {
     white-space: nowrap;
     margin: 20px;
 }
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 24px;
+    }
+}
