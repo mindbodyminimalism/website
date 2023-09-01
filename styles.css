@@ -1,0 +1,125 @@
+a {
+    color: darkslategray;
+}
+
+a:hover {
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+a:active {
+    color: dimgray;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f4f4;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 5% 10%;
+    min-padding: 20px;
+    max-padding: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ .links a:hover {
+     color: black;
+     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+ }
+
+.links a:active {
+    color: dimgray;
+}
+
+.low-height {
+    height: 30vh;
+}
+
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #636b6f;
+    text-decoration: none;
+}
+
+.pic-container {
+    display: flex;
+    justify-content: space-between; /* Change to 'space-between' to keep equal margins between columns */
+    max-width: 1000px;
+    margin: 0 auto; /* This will center the entire container horizontally */
+    padding: 0 4vw; /* Set the left and right padding to create the desired margins */
+}
+
+.pic-col {
+    box-sizing: border-box;
+    flex: 1; /* Allow the columns to grow and shrink equally */
+    padding: 15px;
+    text-align: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.row {
+    display: flex;
+}
+
+.sub-col {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px; /* Set the maximum width for the column */
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+
+.title {
+    font-size: 6vw;
+    min-font-size: 32px;
+    max-font-size: 66px;
+    white-space: nowrap;
+    margin: 20px;
+}
