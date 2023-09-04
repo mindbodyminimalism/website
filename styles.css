@@ -1,5 +1,5 @@
 a {
-    color: darkslategray;
+    color: rgb(0, 0, 0);
 }
 
 a:hover {
@@ -14,11 +14,101 @@ a:active {
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     background-color: #f0f4f4;
-    color: #636b6f;
+    color: #000000;
     font-family: 'Raleway', sans-serif;
+    font-size: larger;
 }
+
+
+.mind-gradient-background {
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(75, 0, 130, .3), transparent),
+      radial-gradient(circle at 50% 80%, rgba(255, 69, 0, .3), transparent),
+      radial-gradient(circle at 80% 40%, rgba(0, 128, 0, .3), transparent);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.body-gradient-background {
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.3), transparent),
+      radial-gradient(circle at 50% 80%, rgba(255, 255, 0, 0.3), transparent),
+      radial-gradient(circle at 80% 40%, rgba(0, 0, 255, 0.3), transparent);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.essence-gradient-background {
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(128, 0, 128, 0.3), transparent),
+      radial-gradient(circle at 50% 80%, rgb(255, 2, 234, 0.3), transparent);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+  
+  .gradient-background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-20deg, #090979 -90%, #f0f4f4 100%);
+  }
+  
+/* Red */
+.red-gradient-background {
+    color: black;
+    background: linear-gradient(-20deg, rgba(255, 0, 0, 0.3) -90%, #f0f4f4 100%);
+  }
+  
+  /* Yellow */
+  .yellow-gradient-background {
+    color: black;
+    background: linear-gradient(-20deg, rgba(255, 255, 0, 0.3) -90%, #f0f4f4 100%);
+  }
+  
+  /* Blue */
+  .blue-gradient-background {
+    color: black;
+    background: linear-gradient(-20deg, rgba(0, 0, 255, 0.3) -90%, #f0f4f4 100%);
+  }
+
+    /* Green */
+  .green-gradient-background {
+    color: black;
+    background: radial-gradient(circle at 100% 100%, rgba(0, 128, 0, .3), transparent);
+  }
+  
+  /* Orange */
+  .orange-gradient-background {
+    color: black;
+    background: linear-gradient(-20deg, rgba(255, 165, 0, 0.3) -90%, #f0f4f4 100%);
+  }
+  
+  /* Indigo */
+  .indigo-gradient-background {
+    color: black;
+    background: linear-gradient(-20deg, rgba(75, 0, 130, 0.3) -90%, #f0f4f4 100%);
+  }
+  
+  /* Purple */
+  .purple-gradient-background {
+    color: black;
+    background: linear-gradient(20deg, rgba(128, 0, 128, 0.856) -90%, #f0f4f4 100%);
+  }
+  
+  /* Pink */
+  .pink-gradient-background {
+    color: black;
+    background: linear-gradient(-20deg, rgb(255, 2, 234) -90%, #f0f4f4 100%);
+  }
+  
+  /* Grey */
+  .grey-gradient-background {
+    color: black;
+    background: linear-gradient(-20deg, rgb(117, 116, 116) -90%, #f0f4f4 100%);
+  }
+  
+  
 
 .container {
     display: flex;
@@ -32,11 +122,11 @@ body, html {
 }
 
 .full-height {
-    height: 100%;
+    min-height: 100vh;
 }
 
 .links > a {
-    color: #636b6f;
+    color: #000000;
     padding: 5% 10%;
     min-padding: 20px;
     max-padding: 50px;
@@ -48,10 +138,19 @@ body, html {
     text-transform: uppercase;
 }
 
+.icon-links:hover {
+    color: black;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+  }
+
+.icon-links:active {
+    color: dimgray;
+}
+
  .links a:hover {
-     color: black;
-     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
- }
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
 
 .links a:active {
     color: dimgray;
