@@ -21,38 +21,80 @@ body, html {
     font-size: larger;
 }
 
-
-.mind-gradient-background {
-    background: 
-      radial-gradient(circle at 20% 20%, rgba(75, 0, 130, .3), transparent),
-      radial-gradient(circle at 50% 80%, rgba(255, 69, 0, .3), transparent),
-      radial-gradient(circle at 80% 40%, rgba(0, 128, 0, .3), transparent);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.dot {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    width: 20vw;
+    height: 20vw;
 }
 
-.body-gradient-background {
-    background: 
-      radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.3), transparent),
-      radial-gradient(circle at 50% 80%, rgba(255, 255, 0, 0.3), transparent),
-      radial-gradient(circle at 80% 40%, rgba(0, 0, 255, 0.3), transparent);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.redDot {
+    background: radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.3), transparent);
+    top: 10vh; /* Adjust the top value */
+    left: 10vw; /* Adjust the left value */
 }
 
-.essence-gradient-background {
-    background: 
-      radial-gradient(circle at 20% 20%, rgba(128, 0, 128, 0.3), transparent),
-      radial-gradient(circle at 50% 80%, rgb(255, 2, 234, 0.3), transparent);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.yellowDot {
+    background: radial-gradient(circle at 50% 80%, rgba(255, 255, 0, 0.3), transparent);
+    top: 20vh; /* Adjust the top value */
+    left: 40vw; /* Adjust the left value */
 }
-  
-  .gradient-background {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-20deg, #090979 -90%, #f0f4f4 100%);
-  }
+
+.blueDot {
+    background: radial-gradient(circle at 80% 40%, rgba(0, 0, 255, 0.3), transparent);
+    top: 30vh; /* Adjust the top value */
+    left: 70vw; /* Adjust the left value */
+}
+
+.greenDot {
+    background: radial-gradient(circle at 20% 20%, rgba(0, 128, 0, .3), transparent);
+    width: 50vh;
+    height: 50vh;
+    top: -10vh;
+    left: -10vh;
+}
+
+.orangeDot {
+    background: radial-gradient(circle at 50% 80%, rgba(255, 165, 0, 0.3), transparent);
+    width: 50vh;
+    height: 50vh;
+    top: 30vh;
+    right: -30vh;
+}
+
+.indigoDot {
+    background: radial-gradient(circle at 80% 40%, rgba(75, 0, 130, 0.3), transparent);
+    width: 50vh;
+    height: 50vh;
+    bottom: -30vh;
+    left: 10vh;
+}
+
+.purpleDot {
+    background: radial-gradient(circle at 20% 20%, rgba(128, 0, 128, 0.856), transparent);
+    width: 50vh;
+    height: 50vh;
+    top: -10vh;
+    left: -10vh;
+}
+
+.pinkDot {
+    background: radial-gradient(circle at 50% 80%, rgb(255, 2, 234), transparent);
+    width: 50vh;
+    height: 50vh;
+    top: 30vh;
+    right: -30vh;
+}
+
+.greyDot {
+    background: radial-gradient(circle at 80% 40%, rgb(117, 116, 116), transparent);
+    width: 50vh;
+    height: 50vh;
+    bottom: -30vh;
+    left: 10vh;
+}
+
   
 /* Red */
 .red-gradient-background {
@@ -108,6 +150,9 @@ body, html {
     background: linear-gradient(-20deg, rgb(117, 116, 116) -90%, #f0f4f4 100%);
   }
   
+  .dotcontainer {
+    position: relative;
+}
   
 
 .container {
