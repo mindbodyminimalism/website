@@ -31,20 +31,20 @@ body, html {
 
 .redDot {
     background: radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.3), transparent);
-    top: 10vh; /* Adjust the top value */
-    left: 10vw; /* Adjust the left value */
+    top: 6vh;
+    left: calc(50vw - 9.5vh);
 }
 
 .yellowDot {
     background: radial-gradient(circle at 50% 80%, rgba(255, 255, 0, 0.3), transparent);
-    top: 20vh; /* Adjust the top value */
-    left: 40vw; /* Adjust the left value */
+    top: 8vh;
+    left: calc(50vw - 10vh);
 }
 
 .blueDot {
     background: radial-gradient(circle at 80% 40%, rgba(0, 0, 255, 0.3), transparent);
-    top: 30vh; /* Adjust the top value */
-    left: 70vw; /* Adjust the left value */
+    top: 10vh;
+    left: calc(50vw - 10vh); 
 }
 
 .greenDot {
@@ -149,10 +149,6 @@ body, html {
     color: black;
     background: linear-gradient(-20deg, rgb(117, 116, 116) -90%, #f0f4f4 100%);
   }
-  
-  .dotcontainer {
-    position: relative;
-}
   
 
 .container {
@@ -267,6 +263,18 @@ body, html {
     white-space: nowrap;
     margin: 20px;
 }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+iframe {
+    max-width: 100%;
+}
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     body {

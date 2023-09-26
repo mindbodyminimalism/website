@@ -1,3 +1,4 @@
+/*
 document.addEventListener("scroll", function () {
     const scrollY = window.scrollY;
 
@@ -25,9 +26,9 @@ document.addEventListener("scroll", function () {
     const greyDot = document.querySelector(".greyDot");
     
 
-    redDot.style.transform = `translateY(${scrollY * .9}px) translateX(${scrollY * 0.1}px)`;
-    yellowDot.style.transform = `translateY(${scrollY * 1.9}px) translateX(${scrollY * -0.2}px)`;
-    blueDot.style.transform = `translateY(${scrollY * -0.9}px) translateX(${scrollY * 0.15}px)`;
+    redDot.style.transform = `translateY(${scrollY * .37}vh) translateX(${scrollY * -.48}vh)`;
+    yellowDot.style.transform = `translateY(${scrollY * .34}vh) translateX(${scrollY * -0.015}vh)`;
+    blueDot.style.transform = `translateY(${scrollY * .32}vh) translateX(${scrollY * 0.46}vh)`;
 
     greenDot.style.transform = `translateY(${scrollY * 0.25}px) translateX(${scrollY * -0.05}px)`;
     orangeDot.style.transform = `translateY(${scrollY * 0.5}px) translateX(${scrollY * 0.05}px)`;
