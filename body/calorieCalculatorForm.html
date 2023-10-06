@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calorie Calculator</title>
+        <link href="/styles.css" rel="stylesheet"/>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 40px; /* Added more space above the form */
+            }
+    
+            h1 {
+                color: #000000; /* Blue color for the title */
+            }
+    
+            #calorieForm {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+    
+            select, input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+    
+            input[type="submit"] {
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+    
+            #results {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+<body>
+    <div class="flex-center position-ref low-height">
+        <div class="content">
+            <div class="title m-b-md">
+                Calorie Calculator
+            </div>
+            <div class="row container links">
+                <a href="/body/eat.html">Back</a>
+            </div>
+        </div>
+        
+    </div>
+
+<!-- Form for the calculator -->
+<form id="calorieForm">
+    <label>
+        Sex:
+        <select name="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </label>
+    <br>
+    <label>
+        Height: 
+        <select name="feet">
+            <option value="4">4 ft</option>
+            <option value="5">5 ft</option>
+            <option value="6">6 ft</option>
+        </select>
+        <select name="inches">
+            <option value="0">0 in</option>
+            <option value="1">1 in</option>
+            <option value="2">2 in</option>
+            <option value="3">3 in</option>
+            <option value="4">4 in</option>
+            <option value="5">5 in</option>
+            <option value="6">6 in</option>
+            <option value="7">7 in</option>
+            <option value="8">8 in</option>
+            <option value="9">9 in</option>
+            <option value="10">10 in</option>
+            <option value="11">11 in</option>
+        </select>
+    </label>
+    <br>
+    <label>
+        Size Preference (0-5):
+        <select name="sizePref">
+            <option value="1">Average (recommended)</option>
+            <option value="0">small</option>
+            <option value="2">large</option>
+            <option value="3">small (body builder)</option>
+            <option value="4">medium (body builder)</option>
+            <option value="5">large (body builder)</option>
+        </select>
+    </label>
+    <br>
+    <label>
+        Age:
+        <input type="number" name="age" min="16" max="110">
+    </label>
+    <br>
+    <label>
+        Activity Level:
+        <select name="activityLevel">
+            <option value="sedentary">Sedentary</option>
+            <option value="lightly active">Lightly Active</option>
+            <option value="moderately active">Moderately Active</option>
+            <option value="very active">Very Active</option>
+            <option value="extremely active">Extremely Active</option>
+        </select>
+    </label>
+    <br>
+    <input type="submit" value="Calculate">
+</form>
+
+<!-- Display Results -->
+<div id="results"></div>
+
+<script src="../javascript/calorieCalculator.js"></script>
+
+</body>
+</html>
