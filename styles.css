@@ -17,8 +17,8 @@ body, html {
     min-height: 100vh;
     background-color: #f0f4f4;
     color: #000000;
-    font-family: 'Raleway', sans-serif;
-    font-size: larger;
+    font-family: 'KohinoorMedium', sans-serif;
+    font-size: medium;
 }
 
 .dot {
@@ -166,17 +166,41 @@ body, html {
     min-height: 100vh;
 }
 
+@font-face {
+    font-family: 'KohinoorLight';
+    src: url('/fonts/KohinoorLatin-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KohinoorMedium';
+    src: url('/fonts/FontsFree-Net-KohinoorTelugu-Medium.ttf') format('truetype');
+}
+
 .links > a {
     color: #000000;
-    padding: 5% 10%;
-    min-padding: 20px;
-    max-padding: 50px;
-    font-size: 12px;
+    padding: 5% 10%; /* Adjust padding using percentages */
+    font-size: 1.2rem; /* Use rem for font size */
     font-weight: 600;
     margin-bottom: 20px;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'KohinoorLight', sans-serif;
+    font-size: medium;
+}
+
+@media (max-width: 768px) {
+    .links > a {
+        padding: 3% 6%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .links > a {
+        padding: 2% 4%;
+        font-size: 0.8rem; 
+    }
 }
 
 .icon-links:hover {
