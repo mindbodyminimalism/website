@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/><meta charset="utf-8"/>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
     <title>Mind Body Minimalism</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"/>
-    <link href="styles.css" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="styles.css" rel="stylesheet" />
     <style>
-        /* Define the CSS for the logo */
+      /* Define the CSS for the logo */
+      img {
+        max-width: 100%; /* Set the maximum width to 100% of its container */
+        /*height: auto;    /* Automatically adjust the height to maintain aspect ratio */
+      }
+
+      @media (max-width: 768px) {
         img {
-            max-width: 100%; /* Set the maximum width to 100% of its container */
-            /*height: auto;    /* Automatically adjust the height to maintain aspect ratio */
+          padding: 3% 6%;
+          font-size: 1rem;
         }
+      }
 
-        @media (max-width: 768px) {
-            img {
-        padding: 3% 6%;
-        font-size: 1rem;
-            }
+      @media (max-width: 480px) {
+        img {
+          padding: 2% 4%;
+          font-size: 0.8rem;
         }
-
-        @media (max-width: 480px) {
-            img {
-                padding: 2% 4%;
-                font-size: 0.8rem; 
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="row flex-center position-ref full-height">
-        <div class="content links">
-            <div class="row title m-b-md">
-                <img src="/media/MBM_Logo.png" alt="Image Description">
-            </div>
-             <div class="row container links">
-                <a href="/about.html">about</a>
-                <a href="/body/body.html">body</a>
-                <a href="/mind/mind.html">mind</a>
-                <a href="/essence/essence.html">essence</a>
-            </div>
+      <div class="content links">
+        <div class="row title m-b-md">
+          <img src="/media/MBM_Logo.png" alt="Image Description" />
         </div>
+        <div class="row container links">
+          <a href="/about.html">about</a>
+          <a href="/body/body.html">body</a>
+          <a href="/mind/mind.html">mind</a>
+          <a href="/essence/essence.html">essence</a>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
