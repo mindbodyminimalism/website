@@ -1,0 +1,1425 @@
+{
+"foods": [
+	{
+		"id" : 1,
+		"food_name" : "Acorn Squash",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 115,
+		"protein" : 2.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 2,
+		"food_name" : "Alfalfa Sprouts",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 8,
+		"protein" : 1.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 3,
+		"food_name" : "Amaranth Leaves",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 27,
+		"protein" : 2.8,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 4,
+		"food_name" : "Artichoke",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 60,
+		"protein" : 4.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 5,
+		"food_name" : "Arugula",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 5,
+		"protein" : 0.5,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 6,
+		"food_name" : "Asparagus",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 27,
+		"protein" : 3.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 7,
+		"food_name" : "Avocado",
+		"type_id" : 2,
+		"amount" : 0.5,
+		"calories" : 120,
+		"protein" : 1.5,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 8,
+		"food_name" : "Bamboo Shoots",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 13,
+		"protein" : 1.5,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 9,
+		"food_name" : "Banana Pepper",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 5,
+		"protein" : 0.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 10,
+		"food_name" : "Beet Greens",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 39,
+		"protein" : 3.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 11,
+		"food_name" : "Beets",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 58,
+		"protein" : 1.6,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 12,
+		"food_name" : "Belgian Endive",
+		"type_id" : 2,
+		"amount" : 4.0,
+		"calories" : 4,
+		"protein" : 0.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 13,
+		"food_name" : "Bell Peppers",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 29,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 14,
+		"food_name" : "Bitter Gourd",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 16,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 15,
+		"food_name" : "Bitter Melon",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 16,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 40,
+		"food_name" : "Cress",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 7,
+		"protein" : 0.8,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 41,
+		"food_name" : "Crookneck Squash",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 29,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 42,
+		"food_name" : "Cucumber",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 16,
+		"protein" : 0.8,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 43,
+		"food_name" : "Daikon",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 20,
+		"protein" : 0.6,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 44,
+		"food_name" : "Dandelion Greens",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 35,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 45,
+		"food_name" : "Delicata Squash",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 40,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 46,
+		"food_name" : "Drumstick",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 42,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 47,
+		"food_name" : "Eggplant",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 35,
+		"protein" : 0.8,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 48,
+		"food_name" : "Endive",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 8,
+		"protein" : 0.6,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 49,
+		"food_name" : "Fava Beans",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 187,
+		"protein" : 13.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 50,
+		"food_name" : "Fennel",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 27,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 51,
+		"food_name" : "Fenugreek Leaves",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 6,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 52,
+		"food_name" : "Fiddlehead",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 35,
+		"protein" : 5.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 53,
+		"food_name" : "Garlic",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 4,
+		"protein" : 0.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 54,
+		"food_name" : "Ginger",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 5,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 55,
+		"food_name" : "Green Beans",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 34,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 56,
+		"food_name" : "Green Onion",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 5,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 57,
+		"food_name" : "Habanero Pepper",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 18,
+		"protein" : 0.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 58,
+		"food_name" : "Horseradish",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 7,
+		"protein" : 0.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 59,
+		"food_name" : "Hubbard Squash",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 50,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 60,
+		"food_name" : "Ivy Gourd",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 18,
+		"protein" : 0.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 61,
+		"food_name" : "Jalapeno",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 4,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 62,
+		"food_name" : "Kabocha",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 40,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 63,
+		"food_name" : "Kale",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 33,
+		"protein" : 3.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 64,
+		"food_name" : "Kohlrabi",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 27,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 65,
+		"food_name" : "Komatsuna",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 29,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 66,
+		"food_name" : "Lambsquarters",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 58,
+		"protein" : 4.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 67,
+		"food_name" : "Leek",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 54,
+		"protein" : 1.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 68,
+		"food_name" : "Lettuce",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 10,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 69,
+		"food_name" : "Lotus Root",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 70,
+		"protein" : 2.5,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 70,
+		"food_name" : "Malabar Spinach",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 19,
+		"protein" : 1.8,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 71,
+		"food_name" : "Mint",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 2,
+		"protein" : 0.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 72,
+		"food_name" : "Moringa",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 92,
+		"protein" : 6.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 73,
+		"food_name" : "Mushroom",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 15,
+		"protein" : 2.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 74,
+		"food_name" : "Mustard Greens",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 36,
+		"protein" : 3.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 75,
+		"food_name" : "Nopales",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 22,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 76,
+		"food_name" : "Okra",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 31,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 77,
+		"food_name" : "Onion",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 44,
+		"protein" : 1.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 78,
+		"food_name" : "Oregano",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 5,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 79,
+		"food_name" : "Pak Choy",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 20,
+		"protein" : 2.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 80,
+		"food_name" : "Parsley",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 1,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 81,
+		"food_name" : "Parsnip",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 55,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 82,
+		"food_name" : "Pea",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 62,
+		"protein" : 4.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 83,
+		"food_name" : "Poblano",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 13,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 84,
+		"food_name" : "Potato",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 163,
+		"protein" : 4.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 85,
+		"food_name" : "Pumpkin",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 30,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 86,
+		"food_name" : "Purslane",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 16,
+		"protein" : 1.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 87,
+		"food_name" : "Radish",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 16,
+		"protein" : 0.6,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 88,
+		"food_name" : "Red Cabbage",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 22,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 89,
+		"food_name" : "Romaine",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 16,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 90,
+		"food_name" : "Rosemary",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 2,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 91,
+		"food_name" : "Rutabaga",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 50,
+		"protein" : 1.5,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 92,
+		"food_name" : "Sage",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 2,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 93,
+		"food_name" : "Salsify",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 82,
+		"protein" : 3.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 94,
+		"food_name" : "Scallion",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 5,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 95,
+		"food_name" : "Shallot",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 28,
+		"protein" : 0.8,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 96,
+		"food_name" : "Skirret",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 82,
+		"protein" : 1.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 97,
+		"food_name" : "Snow Peas",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 42,
+		"protein" : 2.5,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 98,
+		"food_name" : "Sorrel",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 30,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 99,
+		"food_name" : "Soybean",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 298,
+		"protein" : 28.6,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 100,
+		"food_name" : "Spaghetti Squash",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 31,
+		"protein" : 0.6,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 301,
+		"food_name" : "Grits",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 182,
+		"protein" : 4.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 302,
+		"food_name" : "Noodles (Egg)",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 221,
+		"protein" : 8.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 303,
+		"food_name" : "Oats (Old-Fashioned)",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 154,
+		"protein" : 6.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 304,
+		"food_name" : "Pasta (Whole Wheat)",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 174,
+		"protein" : 7.5,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 305,
+		"food_name" : "Quinoa",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 222,
+		"protein" : 8.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 306,
+		"food_name" : "Rice (White, Cooked)",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 206,
+		"protein" : 4.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 307,
+		"food_name" : "Tortilla (Corn)",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 52,
+		"protein" : 1.0,
+		"measurement_type" : "medium (6-inch diameter)"
+	},
+	{
+		"id" : 500,
+		"food_name" : "Almond Butter",
+		"type_id" : 3,
+		"amount" : 2.0,
+		"calories" : 196,
+		"protein" : 7.0,
+		"measurement_type" : "tablespoons"
+	},
+	{
+		"id" : 501,
+		"food_name" : "Almonds",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 160,
+		"protein" : 6.0,
+		"measurement_type" : "ounce"
+	},
+	{
+		"id" : 502,
+		"food_name" : "Black Beans",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 227,
+		"protein" : 15.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 503,
+		"food_name" : "Brazil Nuts",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 187,
+		"protein" : 4.0,
+		"measurement_type" : "ounce"
+	},
+	{
+		"id" : 505,
+		"food_name" : "Chickpeas",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 269,
+		"protein" : 15.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 506,
+		"food_name" : "Chicken Breast",
+		"type_id" : 3,
+		"amount" : 3.5,
+		"calories" : 165,
+		"protein" : 31.0,
+		"measurement_type" : "ounces, cooked"
+	},
+	{
+		"id" : 507,
+		"food_name" : "Chicken Thighs",
+		"type_id" : 3,
+		"amount" : 3.5,
+		"calories" : 209,
+		"protein" : 26.0,
+		"measurement_type" : "ounces, cooked"
+	},
+	{
+		"id" : 508,
+		"food_name" : "Cod",
+		"type_id" : 3,
+		"amount" : 3.5,
+		"calories" : 105,
+		"protein" : 23.0,
+		"measurement_type" : "ounces, cooked"
+	},
+	{
+		"id" : 509,
+		"food_name" : "Edamame",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 189,
+		"protein" : 17.0,
+		"measurement_type" : "cup"
+	},
+	{
+		"id" : 510,
+		"food_name" : "Eggs",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 72,
+		"protein" : 6.0,
+		"measurement_type" : "large egg"
+	},
+	{
+		"id" : 511,
+		"food_name" : "Falafel",
+		"type_id" : 3,
+		"amount" : 3.0,
+		"calories" : 230,
+		"protein" : 10.0,
+		"measurement_type" : "pieces"
+	},
+	{
+		"id" : 512,
+		"food_name" : "Greek Yogurt",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 190,
+		"protein" : 18.0,
+		"measurement_type" : "cup"
+	},
+	{
+		"id" : 513,
+		"food_name" : "Hummus",
+		"type_id" : 3,
+		"amount" : 2.0,
+		"calories" : 50,
+		"protein" : 2.0,
+		"measurement_type" : "tablespoons"
+	},
+	{
+		"id" : 300,
+		"food_name" : "Bread (Whole Wheat)",
+		"type_id" : 1,
+		"amount" : 1.0,
+		"calories" : 80,
+		"protein" : 4.0,
+		"measurement_type" : "slice"
+	},
+	{
+		"id" : 504,
+		"food_name" : "Cashews",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 157,
+		"protein" : 5.0,
+		"measurement_type" : "ounce"
+	},
+	{
+		"id" : 514,
+		"food_name" : "Kidney Beans",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 215,
+		"protein" : 15.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 515,
+		"food_name" : "Lentils",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 230,
+		"protein" : 18.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 516,
+		"food_name" : "Nutritional Yeast",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 20,
+		"protein" : 3.0,
+		"measurement_type" : "tablespoon"
+	},
+	{
+		"id" : 517,
+		"food_name" : "Peanut Butter",
+		"type_id" : 3,
+		"amount" : 2.0,
+		"calories" : 188,
+		"protein" : 8.0,
+		"measurement_type" : "tablespoons"
+	},
+	{
+		"id" : 518,
+		"food_name" : "Peanuts",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 161,
+		"protein" : 7.0,
+		"measurement_type" : "ounce"
+	},
+	{
+		"id" : 519,
+		"food_name" : "Pinto Beans",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 245,
+		"protein" : 15.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 520,
+		"food_name" : "Salmon",
+		"type_id" : 3,
+		"amount" : 3.5,
+		"calories" : 232,
+		"protein" : 25.0,
+		"measurement_type" : "ounces, cooked"
+	},
+	{
+		"id" : 521,
+		"food_name" : "Sardines",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 200,
+		"protein" : 23.0,
+		"measurement_type" : "can (3.75 ounces)"
+	},
+	{
+		"id" : 522,
+		"food_name" : "Seitan",
+		"type_id" : 3,
+		"amount" : 3.0,
+		"calories" : 104,
+		"protein" : 21.0,
+		"measurement_type" : "ounces"
+	},
+	{
+		"id" : 523,
+		"food_name" : "Spirulina",
+		"type_id" : 3,
+		"amount" : 1.0,
+		"calories" : 20,
+		"protein" : 4.0,
+		"measurement_type" : "tablespoon"
+	},
+	{
+		"id" : 524,
+		"food_name" : "Tahini",
+		"type_id" : 3,
+		"amount" : 2.0,
+		"calories" : 178,
+		"protein" : 5.0,
+		"measurement_type" : "tablespoons"
+	},
+	{
+		"id" : 525,
+		"food_name" : "Tempeh",
+		"type_id" : 3,
+		"amount" : 3.0,
+		"calories" : 162,
+		"protein" : 15.0,
+		"measurement_type" : "ounces"
+	},
+	{
+		"id" : 526,
+		"food_name" : "Tofu",
+		"type_id" : 3,
+		"amount" : 3.0,
+		"calories" : 70,
+		"protein" : 8.0,
+		"measurement_type" : "ounces"
+	},
+	{
+		"id" : 527,
+		"food_name" : "Wow Butter",
+		"type_id" : 3,
+		"amount" : 2.0,
+		"calories" : 200,
+		"protein" : 7.0,
+		"measurement_type" : "tablespoons"
+	},
+	{
+		"id" : 16,
+		"food_name" : "Black Radish",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 18,
+		"protein" : 0.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 17,
+		"food_name" : "Bok Choy",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 20,
+		"protein" : 2.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 18,
+		"food_name" : "Broccoli",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 55,
+		"protein" : 3.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 19,
+		"food_name" : "Broccoli Rabe",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 40,
+		"protein" : 5.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 20,
+		"food_name" : "Brussels Sprouts",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 56,
+		"protein" : 4.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 21,
+		"food_name" : "Butternut Squash",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 82,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 22,
+		"food_name" : "Cabbage",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 17,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 23,
+		"food_name" : "Calabaza",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 35,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 24,
+		"food_name" : "Caper",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 2,
+		"protein" : 0.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 25,
+		"food_name" : "Carrot",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 25,
+		"protein" : 0.6,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 26,
+		"food_name" : "Cassava",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 330,
+		"protein" : 3.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 27,
+		"food_name" : "Cauliflower",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 29,
+		"protein" : 2.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 28,
+		"food_name" : "Celeriac",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 42,
+		"protein" : 1.5,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 29,
+		"food_name" : "Celery",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 16,
+		"protein" : 0.7,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 30,
+		"food_name" : "Chard",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 35,
+		"protein" : 3.3,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 31,
+		"food_name" : "Chayote",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 25,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 32,
+		"food_name" : "Cherry Tomato",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 27,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 33,
+		"food_name" : "Chicory",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 7,
+		"protein" : 0.2,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 34,
+		"food_name" : "Chili Pepper",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 18,
+		"protein" : 0.9,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 35,
+		"food_name" : "Chinese Broccoli",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 62,
+		"protein" : 5.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 36,
+		"food_name" : "Chinese Cabbage",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 12,
+		"protein" : 1.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 37,
+		"food_name" : "Chives",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 1,
+		"protein" : 0.1,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 38,
+		"food_name" : "Collard Greens",
+		"type_id" : 2,
+		"amount" : 8.0,
+		"calories" : 49,
+		"protein" : 4.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 39,
+		"food_name" : "Corn",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 88,
+		"protein" : 3.0,
+		"measurement_type" : "oz"
+	},
+	{
+		"id" : 101,
+		"food_name" : "Spaghetti Squash",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 42,
+		"protein" : 1.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 102,
+		"food_name" : "Spinach",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 41,
+		"protein" : 5.3,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 103,
+		"food_name" : "Spring Onion",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 5,
+		"protein" : 0.1,
+		"measurement_type" : "medium stalk"
+	},
+	{
+		"id" : 104,
+		"food_name" : "Sprouts",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 31,
+		"protein" : 3.0,
+		"measurement_type" : "cup"
+	},
+	{
+		"id" : 105,
+		"food_name" : "Squash Blossom",
+		"type_id" : 2,
+		"amount" : 10.0,
+		"calories" : 5,
+		"protein" : 0.5,
+		"measurement_type" : "blossoms"
+	},
+	{
+		"id" : 106,
+		"food_name" : "String Beans",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 44,
+		"protein" : 2.4,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 107,
+		"food_name" : "Sugar Snap Peas",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 41,
+		"protein" : 2.0,
+		"measurement_type" : "cup, raw"
+	},
+	{
+		"id" : 108,
+		"food_name" : "Summer Squash",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 36,
+		"protein" : 1.5,
+		"measurement_type" : "cup, sliced, cooked"
+	},
+	{
+		"id" : 109,
+		"food_name" : "Sweet Corn",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 99,
+		"protein" : 3.3,
+		"measurement_type" : "medium ear"
+	},
+	{
+		"id" : 110,
+		"food_name" : "Sweet Potato",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 180,
+		"protein" : 4.0,
+		"measurement_type" : "medium (150g), cooked"
+	},
+	{
+		"id" : 111,
+		"food_name" : "Swiss Chard",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 35,
+		"protein" : 3.3,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 112,
+		"food_name" : "Tinda",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 20,
+		"protein" : 1.0,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 113,
+		"food_name" : "Tomatillo",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 11,
+		"protein" : 0.4,
+		"measurement_type" : "medium"
+	},
+	{
+		"id" : 114,
+		"food_name" : "Tomato",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 22,
+		"protein" : 1.1,
+		"measurement_type" : "medium"
+	},
+	{
+		"id" : 115,
+		"food_name" : "Turnip",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 34,
+		"protein" : 1.1,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 116,
+		"food_name" : "Turnip Greens",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 29,
+		"protein" : 1.5,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 117,
+		"food_name" : "Water Chestnut",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 70,
+		"protein" : 1.0,
+		"measurement_type" : "cup, sliced"
+	},
+	{
+		"id" : 118,
+		"food_name" : "Winter Melon",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 16,
+		"protein" : 0.4,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 119,
+		"food_name" : "Winter Squash",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 76,
+		"protein" : 1.8,
+		"measurement_type" : "cup, cooked"
+	},
+	{
+		"id" : 120,
+		"food_name" : "Yellow Pepper",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 50,
+		"protein" : 1.7,
+		"measurement_type" : "medium pepper"
+	},
+	{
+		"id" : 121,
+		"food_name" : "Yellow Squash",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 36,
+		"protein" : 1.5,
+		"measurement_type" : "cup, sliced, cooked"
+	},
+	{
+		"id" : 122,
+		"food_name" : "Zucchini",
+		"type_id" : 2,
+		"amount" : 1.0,
+		"calories" : 17,
+		"protein" : 1.4,
+		"measurement_type" : "cup, cooked"
+	}
+]}

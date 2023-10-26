@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Information</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <link href="/styles.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px; /* Added more space above the form */
+        }
+
+        .title {
+        font-size: 2rem; 
+        color: #000000;
+        margin-bottom: 20px;
+        }
+    
+        #foodSelector {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #foodList, #typeList {
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #selectors {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-center position-ref low-height">
+        <div class="content">
+            <div class="title m-b-md">
+                Meal Planner
+            </div>
+            <div class="row container links">
+                <a href="/body/eat.html">Back</a>
+            </div>
+        </div>
+    </div>
+<div id="foodSelector">
+    <div id="selectors">
+        <label for="typeList">Select Type: </label>
+        <select id="typeList">
+            <!-- Options populated by JavaScript -->
+        </select>
+    </div>
+    <div id="selectors">
+        <label for="foodList">Select Food: </label>
+        <select id="foodList">
+            <!-- Options populated by JavaScript -->
+        </select>
+    </div>
+    <div class="info-box" id="infoBox">
+        <!-- Food info populated by JavaScript -->
+    </div>
+</div>
+    <script>
+// Initialize variables
+let foodData;
+
+// Mapping type_id to its name
+const typeIdToName = {
+    1: 'Base',
+    2: 'Vegetable',
+    3: 'Protein',
+    4: 'Fruit',
+    5: 'Sauce',
+    6: 'Seasoning'
+};
+
+// Fetch JSON data from external file
+fetch('../data/food.json')
+    .then(response => response.json())
+    .then(data => {
+        foodData = data;
+
+        // Populate type ID dropdown
+        const typeList = document.getElementById("typeList");
+
+        // Add placeholder to the typeList dropdown
+        const placeholderOption = document.createElement("option");
+        placeholderOption.value = "";
+        placeholderOption.textContent = "Select Food Type";
+        placeholderOption.disabled = true;
+        placeholderOption.selected = true;
+        typeList.appendChild(placeholderOption);
+
+        const uniqueTypeIds = [...new Set(foodData.foods.map(food => food.type_id))];
+        uniqueTypeIds.forEach(typeId => {
+            const option = document.createElement("option");
+            option.value = typeId;
+            option.textContent = typeIdToName[typeId] || typeId;
+            typeList.appendChild(option);
+        });
+
+// Event listener for type ID dropdown
+typeList.addEventListener("change", function() {
+    const selectedTypeId = this.value;
+    const foodList = document.getElementById("foodList");
+    foodList.innerHTML = "";
+    const filteredFoods = foodData.foods.filter(food => food.type_id == selectedTypeId);
+
+    // Sort filtered foods alphabetically
+    filteredFoods.sort((a, b) => a.food_name.localeCompare(b.food_name));
+
+    filteredFoods.forEach(food => {
+        const option = document.createElement("option");
+        option.value = food.id;
+        option.textContent = food.food_name;
+        foodList.appendChild(option);
+    });
+
+    // Set default selection for foodList and trigger change event
+    foodList.value = filteredFoods[0]?.id;
+    const foodChangeEvent = new Event('change');
+    foodList.dispatchEvent(foodChangeEvent);
+});
+
+
+
+        // Event listener for food dropdown
+        const foodList = document.getElementById("foodList");
+        foodList.addEventListener("change", function() {
+            const selectedId = this.value;
+            const selectedFood = foodData.foods.find(food => food.id == selectedId);
+            const infoBox = document.getElementById("infoBox");
+            infoBox.innerHTML = `
+                <strong>Food Name:</strong> ${selectedFood.food_name} <br>
+                <strong>Type ID:</strong> ${selectedFood.type_id} <br>
+                <strong>Amount:</strong> ${selectedFood.amount} ${selectedFood.measurement_type} <br>
+                <strong>Calories:</strong> ${selectedFood.calories} <br>
+                <strong>Protein:</strong> ${selectedFood.protein}g
+            `;
+        });
+
+    })
+    .catch(error => {
+        console.error("Error fetching JSON data:", error);
+    });
+
+
+    </script>
+
+</body>
+</html>
