@@ -47,6 +47,11 @@
         margin-bottom: 30px;
     }
 
+    .selectbox {
+    width: 150px;
+}
+
+
     </style>
 </head>
 <body>
@@ -54,23 +59,26 @@
     <div class="flex-center position-ref low-height">
         <div class="content">
             <div class="title m-b-md">
-                Meal Planner
+                Food Information
             </div>
             <div class="row container links">
                 <a href="/body/eat.html">Back</a>
+            </div>
+            <div class="m-b-md">
+                Find nutrition information and cooking styles on all the different foods we recommend. 
             </div>
         </div>
     </div>
 <div id="foodSelector">
     <div id="selectors">
         <label for="typeList">Select Type: </label>
-        <select id="typeList">
+        <select id="typeList" class="selectbox">
             <!-- Options populated by JavaScript -->
         </select>
     </div>
     <div id="selectors">
         <label for="foodList">Select Food: </label>
-        <select id="foodList">
+        <select id="foodList" class="selectbox">
             <!-- Options populated by JavaScript -->
         </select>
     </div>
