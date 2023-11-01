@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal PLanner</title>
+    <title>Meal Planner</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
     <link href="/styles.css" rel="stylesheet"/>
@@ -15,10 +15,10 @@
         }
 
         .title {
-        font-size: 2rem; 
-        color: #000000;
-        margin-bottom: 20px;
-    }
+            font-size: 2rem; 
+            color: #000000;
+            margin-bottom: 20px;
+        }
 
         #mealPlanForm {
             max-width: 400px;
@@ -57,63 +57,98 @@
             font-weight: bold;
         }
 
-/* Tooltip container */
-.tooltip {
-position: relative;
-display: inline-block;
-}
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
 
-/* Tooltip icon */
-.tooltip .tooltip-icon {
-/* Define icon styles, e.g., font-size, color, etc. */
-font-size: 18px;
-color: #007bff;
-cursor: pointer;
-}
+        /* Tooltip icon */
+        .tooltip .tooltip-icon {
+            /* Define icon styles, e.g., font-size, color, etc. */
+            font-size: 18px;
+            color: #007bff;
+            cursor: pointer;
+        }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
-visibility: hidden;
-font-size: 16px;
-min-width: 400px;
-background-color: #333;
-color: #fff;
-text-align: left;
-border-radius: 6px;
-padding: 5px;
-position: absolute;
-z-index: 1;
-bottom: 125%;
-left: 50%;
-transform: translateX(-50%);
-opacity: 0;
-transition: opacity 0.3s;
-}
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            font-size: 16px;
+            min-width: 400px;
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
 
-.tooltip:hover .tooltiptext {
-visibility: visible;
-opacity: 1;
-}
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
 
-#diet {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+        #diet {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-    #diet label {
-        margin: 0 1rem;
-    }
+        #diet label {
+            margin: 0 1rem;
+        }
 
-    #diet i {
-        font-size: 5rem; 
-    }
+        #diet i {
+            font-size: 5rem; 
+        }
 
-    .selectbox {
-    width: 150px;
-}
+        .selectbox {
+            width: 150px;
+        }
+
+        /* Table styles */
+        table {
+            margin: 0 auto;
+            width: 75%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .glist {
+            margin: 0 auto;
+            width: 75%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 <body>
@@ -127,74 +162,133 @@ opacity: 1;
             </div>
         </div>
     </div>
-        <form id="mealPlanForm">
-            <label for="calories">Total Daily Caloric Intake (in calories):</label>
-            <input type="number" id="calories" class="selectbox" name="calories" required min="1200" max="6000">
+    <form id="mealPlanForm">
+        <label for="calories">Total Daily Caloric Intake (in calories):</label>
+        <input type="number" id="calories" class="selectbox" name="calories" required min="1200" max="6000">
 
-            <label for="meals">Number of Meals per Day:</label>
-            <select id="meals" class="selectbox" name="meals" required>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
+        <label for="meals">Number of Meals per Day:</label>
+        <select id="meals" class="selectbox" name="meals" required>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
 
-            <label for="diet">Dietary Preference:</label>
-            <div id="diet" class="icon-select">
-                <label>
-                    <input type="radio" name="diet" value="neither">
-                    <i class="fas fa-5x fa-utensils"></i>
-                    <span>Neither</span>
-                </label>
-                <label>
-                    <input type="radio" name="diet" value="vegetarian">
-                    <i class="fas fa-5x fa-egg"></i>
-                    <span>Vegetarian</span>
-                </label>
-                <label>
-                    <input type="radio" name="diet" value="vegan">
-                    <i class="fas fa-5x fa-leaf"></i>
-                    <span>Vegan</span>
-                </label>
-            </div>
-            
+        <label for="diet">Dietary Preference:</label>
+        <div id="diet" class="icon-select">
+            <label>
+                <input type="radio" name="diet" value="neither">
+                <i class="fas fa-5x fa-utensils"></i>
+                <span>Neither</span>
+            </label>
+            <label>
+                <input type="radio" name="diet" value="vegetarian">
+                <i class="fas fa-5x fa-egg"></i>
+                <span>Vegetarian</span>
+            </label>
+            <label>
+                <input type="radio" name="diet" value="vegan">
+                <i class="fas fa-5x fa-leaf"></i>
+                <span>Vegan</span>
+            </label>
+        </div>
 
-            <button type="submit">Generate Meal Plan</button>
-        </form>
+        <label for="diet">Dietary Restrictions:</label>
+        <div id="diet" class="icon-select">
+            <label>
+                <input type="checkbox" name="diet[]" value="dairy">
+                <span>Dairy</span>
+            </label>
+            <label>
+                <input type="checkbox" name="diet[]" value="egg">
+                <span>Egg</span>
+            </label>
+            <label>
+                <input type="checkbox" name="diet[]" value="peanut">
+                <span>Peanut</span>
+            </label>
+        </div>
+        <div id="diet" class="icon-select">
+            <label>
+                <input type="checkbox" name="diet[]" value="soy">
+                <span>Soy</span>
+            </label>
+            <label>
+                <input type="checkbox" name="diet[]" value="wheat">
+                <span>Wheat</span>
+            </label>
+            <label>
+                <input type="checkbox" name="diet[]" value="tree-nut">
+                <span>Tree Nut</span>
+            </label>
+        </div>
+        
+
+        <button type="submit">Generate Meal Plan</button>
+    </form>
+
+    <!-- Meals Plan Table -->
+    <table>
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                Weekly Meal  Plan
+            </td>
+        </tr>
+        <tr>
+            <th>Day 1</th>
+            <td>Object 1</td>
+            <td>Object 2</td>
+            <td>Object 3</td>
+        </tr>
+        <tr>
+            <th>Day 2</th>
+            <td>Object 4</td>
+            <td>Object 5</td>
+            <td>Object 6</td>
+        </tr>
+        <tr>
+            <th>Day 3</th>
+            <td>Object 7</td>
+            <td>Object 8</td>
+            <td>Object 9</td>
+        </tr>
+        <tr>
+            <th>Day 4</th>
+            <td>Object 10</td>
+            <td>Object 11</td>
+            <td>Object 12</td>
+        </tr>
+        <tr>
+            <th>Day 5</th>
+            <td>Object 13</td>
+            <td>Object 14</td>
+            <td>Object 15</td>
+        </tr>
+        <tr>
+            <th>Day 6</th>
+            <td>Object 16</td>
+            <td>Object 17</td>
+            <td>Object 18</td>
+        </tr>
+        <tr>
+            <th>Day 7</th>
+            <td>Object 19</td>
+            <td>Object 20</td>
+            <td>Object 21</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                <button type="submit">Generate Grocery List</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Grocery List -->
+    <div class="glist">
+        <header>Grocery List</header>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Get references to form elements
-            const mealPlanForm = document.getElementById("mealPlanForm");
-            const caloriesInput = document.getElementById("calories");
-            const mealsSelect = document.getElementById("meals");
-            const dietOptions = document.querySelectorAll("input[name='diet']");
-    
-            // Event listener for form submission
-            mealPlanForm.addEventListener("submit", function (event) {
-                event.preventDefault();
-    
-                // Get user input values
-                const calories = parseFloat(caloriesInput.value);
-                const numMeals = parseInt(mealsSelect.value);
-                let dietPreference = "";
-    
-                // Determine the selected diet preference
-                dietOptions.forEach((option) => {
-                    if (option.checked) {
-                        dietPreference = option.value;
-                    }
-                });
-    
-                // Call a function to generate the meal plan based on the input
-                generateMealPlan(calories, numMeals, dietPreference);
-            });
-    
-            // Function to generate the meal plan
-            function generateMealPlan(calories, numMeals, dietPreference) {
-                // Add your logic here to generate the meal plan
-                // Fetch meal data and perform calculations
-                // Then, display the meal plan results to the user
-            }
-        });
-    </script>
+</body>
+
+
+<script src="../javascript/mealPlanGenerator.js"></script>
+
 </body>
 </html>
