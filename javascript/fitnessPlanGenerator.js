@@ -31,17 +31,22 @@ document
       (plan) => plan.workout_days === numberOfWorkouts
     );
 
-    // The preference will narrow down the plans further (this can be adjusted as needed)
+    // The preference will narrow down the plans further
     matchingPlans = matchingPlans.filter((plan) => {
-      // Check if resistance_training is true
       if (
         plan.resistance_training &&
         selectedPreferences.includes('resistance')
       ) {
         return true;
       }
-      // Add similar checks for cardio and yoga if needed
-      // ...
+
+      if (plan.cardio && selectedPreferences.includes('cardio')) {
+        return true;
+      }
+
+      if (plan.yoga && selectedPreferences.includes('yoga')) {
+        return true;
+      }
 
       return false;
     });
@@ -52,42 +57,24 @@ document
       return;
     }
 
-    // For simplicity, let's display the first matching plan
-    let selectedPlan = matchingPlans[0];
-    displayPlan(selectedPlan);
+    // For a perfect match, we should find the plan that matches all criteria
+    let perfectMatch = matchingPlans.find((plan) => {
+      return (
+        plan.workout_days === numberOfWorkouts &&
+        plan.resistance_training ===
+          selectedPreferences.includes('resistance') &&
+        plan.cardio === selectedPreferences.includes('cardio') &&
+        plan.yoga === selectedPreferences.includes('yoga')
+      );
+    });
+
+    if (!perfectMatch) {
+      displayErrorMessage('No perfect matching fitness plan found.');
+      return;
+    }
+
+    displayPlan(perfectMatch);
   });
-
-function generatePlan(event) {
-  event.preventDefault();
-
-  const selectedWorkoutDays = parseInt(
-    document.getElementById('meals').value,
-    10
-  );
-  const selectedPreferences = Array.from(
-    document.querySelectorAll('input[name="pref"]:checked')
-  ).map((input) => input.value);
-
-  // Filter the fitness plans based on user preferences
-  const filteredPlans = fitnessData.filter((plan) => {
-    // Check if the selected preferences match the plan's properties
-    return (
-      selectedPreferences.every(
-        (preference) => plan[preference.toLowerCase()]
-      ) && plan.workout_days === selectedWorkoutDays
-    );
-  });
-
-  // Check if filteredPlans is empty
-  if (filteredPlans.length === 0) {
-    const container = document.getElementById('fitnessPlanContainer');
-    container.innerHTML = '<p>No matching fitness plans found.</p>';
-  } else {
-    // For simplicity, let's display the first matching plan
-    const selectedPlan = filteredPlans[0];
-    displayPlan(selectedPlan);
-  }
-}
 
 function displayPlan(plan) {
   const container = document.getElementById('fitnessPlanContainer');
