@@ -116,7 +116,7 @@
         }
 
         /* Table styles */
-        table {
+        .table {
             margin: 0 auto;
             width: 75%;
             margin: 0 auto;
@@ -138,17 +138,22 @@
             background-color: #f2f2f2;
         }
 
+        /* Grocery List styles */
         .glist {
-            margin: 0 auto;
-            width: 75%;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            margin-top: 30px;
-            margin-bottom: 50px;
+        margin: 0 auto;
+        width: 75%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        margin-top: 30px;
+        margin-bottom: 50px;
         }
+
+        .glist header {
+        font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -202,18 +207,18 @@
                 <span>Egg</span>
             </label>
             <label>
-                <input type="checkbox" name="diet[]" value="peanut">
+                <input type="checkbox" name="diet[]" value="Gluten">
                 <span>Gluten</span>
             </label>
         </div>
         <div id="diet" class="icon-select">
             <label>
                 <input type="checkbox" name="diet[]" value="soy">
-                <span>Peanut</span>
+                <span>Soy</span>
             </label>
             <label>
                 <input type="checkbox" name="diet[]" value="wheat">
-                <span>Soy</span>
+                <span>Wheat</span>
             </label>
             <label>
                 <input type="checkbox" name="diet[]" value="tree-nut">
@@ -226,65 +231,15 @@
     </form>
 
     <!-- Meals Plan Table -->
-    <table>
-        <tr>
-            <td colspan="4" style="text-align: center;">
-                Weekly Meal  Plan
-            </td>
-        </tr>
-        <tr>
-            <th>Day 1</th>
-            <td>Object 1</td>
-            <td>Object 2</td>
-            <td>Object 3</td>
-        </tr>
-        <tr>
-            <th>Day 2</th>
-            <td>Object 4</td>
-            <td>Object 5</td>
-            <td>Object 6</td>
-        </tr>
-        <tr>
-            <th>Day 3</th>
-            <td>Object 7</td>
-            <td>Object 8</td>
-            <td>Object 9</td>
-        </tr>
-        <tr>
-            <th>Day 4</th>
-            <td>Object 10</td>
-            <td>Object 11</td>
-            <td>Object 12</td>
-        </tr>
-        <tr>
-            <th>Day 5</th>
-            <td>Object 13</td>
-            <td>Object 14</td>
-            <td>Object 15</td>
-        </tr>
-        <tr>
-            <th>Day 6</th>
-            <td>Object 16</td>
-            <td>Object 17</td>
-            <td>Object 18</td>
-        </tr>
-        <tr>
-            <th>Day 7</th>
-            <td>Object 19</td>
-            <td>Object 20</td>
-            <td>Object 21</td>
-        </tr>
-        <tr>
-            <td colspan="4" style="text-align: center;">
-                <button type="submit">Generate Grocery List</button>
-            </td>
-        </tr>
-    </table>
+
+    <div id="mealPlanContainer"></div>
 
     <!-- Grocery List -->
-    <div class="glist">
+    <div id="groceryListContainer" class="glist" style="display: none;">
         <header>Grocery List</header>
-    </div>
+      </div>
+      
+
 </body>
 
 
