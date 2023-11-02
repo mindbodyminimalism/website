@@ -47,9 +47,10 @@
         margin-bottom: 30px;
     }
 
-    .selectbox {
-    width: 150px;
-}
+        .selectbox {
+        width: 150px;
+    }
+    
 
 
     </style>
@@ -158,7 +159,6 @@ typeList.addEventListener("change", function() {
             const infoBox = document.getElementById("infoBox");
             infoBox.innerHTML = `
                 <strong>Food Name:</strong> ${selectedFood.food_name} <br>
-                <strong>Type ID:</strong> ${selectedFood.type_id} <br>
                 <strong>Amount:</strong> ${selectedFood.amount} ${selectedFood.measurement_type} <br>
                 <strong>Calories:</strong> ${selectedFood.calories} <br>
                 <strong>Protein:</strong> ${selectedFood.protein}g
