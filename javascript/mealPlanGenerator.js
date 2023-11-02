@@ -113,7 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
         groceryButton.innerText = 'Generate Grocery List';
 
         // Add CSS styles to the button
-        groceryButton.style.margin = '20px'; // Adjust the margin as needed
+        groceryButton.style.margin = '20px';
+        groceryButton.style.background = '#007bff';
+        groceryButton.style.color = '#fff';
+        groceryButton.style.cursor = 'pointer';
 
         groceryButton.addEventListener('click', generateGroceryList);
         mealPlanContainer.appendChild(groceryButton);
