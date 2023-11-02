@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
             validMeal = false;
           if (selectedRestrictions.includes('egg') && meal.has_egg)
             validMeal = false;
-          if (selectedRestrictions.includes('peanut') && meal.has_peanuts)
+          if (selectedRestrictions.includes('gluten') && meal.has_gluten)
+            validMeal = false;
+          if (selectedRestrictions.includes('peanuts') && meal.has_peanuts)
             validMeal = false;
           if (selectedRestrictions.includes('soy') && meal.has_soy)
-            validMeal = false;
-          if (selectedRestrictions.includes('wheat') && meal.has_gluten)
             validMeal = false;
           if (selectedRestrictions.includes('tree-nut') && meal.has_treenuts)
             validMeal = false;
