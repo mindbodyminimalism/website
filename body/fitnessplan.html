@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Planner</title>
+    <title>Fitness Planner</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
     <link href="/styles.css" rel="stylesheet"/>
@@ -20,7 +20,7 @@
             margin-bottom: 20px;
         }
 
-        #mealPlanForm {
+        #fitnessPlanForm {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
@@ -101,20 +101,23 @@
             opacity: 1;
         }
 
-        #diet {
+        #pref {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             text-align: center;
             margin-bottom: 30px;
         }
 
-        #diet label {
+        #pref label {
             margin: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        #diet i {
-            font-size: 5rem; 
+        #pref i {
+            font-size: 4rem; 
         }
 
         .selectbox {
@@ -166,90 +169,53 @@
     <div class="flex-center position-ref low-height">
         <div class="content">
             <div class="title m-b-md">
-                Meal Planner
+                Fitness Planner
             </div>
             <div class="row container links">
-                <a href="/body/eat.html">Back</a>
+                <a href="/body/body.html">Back</a>
             </div>
         </div>
     </div>
-    <form id="mealPlanForm">
-        <label for="calories">Total Daily Caloric Intake (in calories):</label>
-        <input type="number" id="calories" class="selectbox" name="calories" required min="1200" max="6000">
-
-        <label for="meals">Number of Meals per Day:</label>
-        <select id="meals" class="selectbox" name="meals" required>
+    <form id="fitnessPlanForm">
+        <label for="days">Number of Workouts per Week:</label>
+        <select id="days" class="selectbox" name="days" required>
             <option value="3">3</option>
             <option value="4">4</option>
+            <option value="5">5</option>
         </select>
 
-        <label for="diet">Dietary Preference:</label>
-        <div id="diet" class="icon-select">
+        <label for="pref">Fitness Preference:</label>
+        <div id="pref" class="icon-select">
             <label>
-                <input type="radio" name="diet" value="None">
-                <i class="fas fa-5x fa-utensils"></i>
-                <span>None</span>
+                <input type="checkbox" name="pref" value="resistance">
+                <i class="fas fa-3x fa-dumbbell"></i>
+                <span>Resistance Only</span>
             </label>
             <label>
-                <input type="radio" name="diet" value="vegetarian">
-                <i class="fas fa-5x fa-egg"></i>
-                <span>Vegetarian</span>
+                <input type="checkbox" name="pref" value="cardio">
+                <i class="fas fa-3x fa-person-running"></i>
+                <span>Cardio</span>
             </label>
             <label>
-                <input type="radio" name="diet" value="vegan">
-                <i class="fas fa-5x fa-leaf"></i>
-                <span>Vegan</span>
+                <input type="checkbox" name="pref" value="yoga">
+                <i class="fas fa-5x fa-solid fa-person-praying"></i>
+                <span>Yoga</span>
             </label>
         </div>
 
-        <label for="diet">Dietary Restrictions:</label>
-        <div id="diet" class="icon-select">
-            <label>
-                <input type="checkbox" name="diet[]" value="dairy">
-                <span>Dairy</span>
-            </label>
-            <label>
-                <input type="checkbox" name="diet[]" value="egg">
-                <span>Egg</span>
-            </label>
-            <label>
-                <input type="checkbox" name="diet[]" value="Gluten">
-                <span>Gluten</span>
-            </label>
-        </div>
-        <div id="diet" class="icon-select">
-            <label>
-                <input type="checkbox" name="diet[]" value="soy">
-                <span>Soy</span>
-            </label>
-            <label>
-                <input type="checkbox" name="diet[]" value="wheat">
-                <span>Wheat</span>
-            </label>
-            <label>
-                <input type="checkbox" name="diet[]" value="tree-nut">
-                <span>Tree Nut</span>
-            </label>
-        </div>
-        
-
-        <button type="submit">Generate Meal Plan</button>
+        <button type="submit">Generate Fitness Plan</button>
     </form>
 
-    <!-- Meals Plan Table -->
+    <!-- Fitness Plan Table -->
 
-    <div id="mealPlanContainer"></div>
+    <div id="fitnessPlanContainer"></div>
 
-    <!-- Grocery List -->
-    <div id="groceryListContainer" class="glist" style="display: none;">
-        <header>Grocery List</header>
-      </div>
       
 
 </body>
 
 
-<script src="../javascript/mealPlanGenerator.js"></script>
+<script src="../javascript/fitnessPlanGenerator.js"></script>
 
 </body>
 </html>
