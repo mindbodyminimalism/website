@@ -301,6 +301,13 @@ html {
   max-width: 1000px;
   margin: 0 auto; /* This will center the entire container horizontally */
   padding: 0 4vw; /* Set the left and right padding to create the desired margins */
+  position: relative; /* This ensures that the z-index is applied correctly */
+  z-index: 2;
+}
+
+.top-container {
+  /* Adjust the values below to create the desired shadow effect */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .pic-col {
@@ -362,4 +369,28 @@ iframe {
   .title {
     font-size: 24px;
   }
+}
+
+.scrollable-content {
+  height: 500px;
+  overflow-y: auto;
+  position: relative; /* If not already positioned */
+  z-index: 1; /* Ensures that the content is below the shadow */
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f0f4f4;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-container {
+  -webkit-box-shadow: 0 -5px 6px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -5px 6px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -5px 6px -6px rgba(0, 0, 0, 0.5);
 }
