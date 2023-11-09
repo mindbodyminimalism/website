@@ -270,11 +270,14 @@ iframe {
 }
 
 .scrollable-content {
-  max-height: 7200px;
+  height: 720px;
   max-width: 1080px;
   overflow-y: auto;
-  position: relative; /* If not already positioned */
-  z-index: 1; /* Ensures that the content is below the shadow */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
 }
 
 .footer {
@@ -295,4 +298,95 @@ iframe {
   max-width: 1000px; /* Adjust the value to your desired maximum width */
   margin: 0 auto; /* Center horizontally */
 }
+ 
+/* carousel css */
 
+main section {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.main .carousel-container {
+  width: 100%;
+  height: 40rem;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.375rem;
+}
+
+.main .carousel-container .item {
+  position: relative;
+  display: none;
+  animation: fade 0.3s ease-in-out;
+}
+
+.main .carousel-container .item .numbertext {
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.9375rem;
+  font-size: 0.875rem;
+}
+
+.main .carousel-container .prev,
+.main .carousel-container .next {
+  padding: 0.3125rem;
+  position: absolute;
+  top: calc(50% - 1rem);
+  user-select: none;
+  font-size: 1rem;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000; /* Make sure the z-index is high enough to be above other elements */
+  cursor: pointer;
+  /* additional styles */
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+.main .carousel-container .dots {
+  padding: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .carousel-container .dots .dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 0 0.125rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+.main .carousel-container .dots .dot:focus,
+.main .carousel-container .dots .dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
