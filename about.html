@@ -26,64 +26,65 @@
         </div>
       </div>
     </div>
-    <div class="video-container">
-      <iframe
-        width="900"
-        height="500"
-        src="https://www.youtube.com/embed/S1M_bMVRcyo"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
     <div class="row container">
       <div class="scrollable-content">
-        <div class="sub-col">
-          <p>
-            Welcome to Mind Body Minimalism, your ultimate guide to living a
-            simpler, happier, and healthier life. Our tools are designed to help
-            you streamline your daily routines and make the most of your time,
-            energy, and resources.
-          </p>
-          <p>
-            Mind Body Minimalism was created to help relieve the burden of
-            decision-making in our daily lives. By providing personalized
-            recommendations we can help simplify and streamline our routines,
-            reducing the mental load of decision-making. By focusing on the
-            essentials and eliminating the excess, we can free ourselves from
-            stress, clutter, and distractions, and create space for what truly
-            matters in life. Whether you want to improve your diet, boost your
-            fitness, calm your mind, or enhance your sleep, we've got you covered.
-          </p>
-          <p>
-            Our platform offers a variety of features and tools to support your
-            journey towards minimalism and wellness. You can create custom meal
-            plans, workout routines, and receive other personalized
-            recommendations and insights based on your goals and preferences. You
-            can also access a library of guided meditations, breathing exercises,
-            and relaxation techniques, to help you find peace and balance amidst
-            the chaos of everyday life.
-          </p>
-          <p>
-            In the modern world, decision-making has become complex. With
-            information overload defining a "good" decision is challenging. Rapid
-            changes in technology and society make it harder to navigate our
-            everyday choices effectively. Our tools are designed to help us
-            simplify our lives, freeing up mental and physical resources to focus
-            on what truly matters. By reducing the burden of decision-making, we
-            can reduce stress, improve our well-being, and live more intentionally
-            and joyfully.
-          </p>
-          <p>
-            Begin your journey with Mind Body Minimalism today and start living
-            your best life with less.
-          </p>
-        </div>
+          <div class="sub-col">
+              <main>
+                  <section class="has-dflex-center">
+                      <div class="lx-container-80">
+                          <div class="lx-row">
+                              <div class="lx-card carousel-container">
+                                  <!-- Previous button -->
+                                  <div class="prev">&#10094;</div>
+                                  <div class="next">&#10095;</div>
+                              
+                                  <!-- Carousel items -->
+                                  <div class="item fade">
+                                    <div class="video-container">
+                                      <iframe
+                                        width="900"
+                                        height="500"
+                                        src="https://www.youtube.com/embed/S1M_bMVRcyo"
+                                        frameborder="0"
+                                        allowfullscreen
+                                      ></iframe>
+                                    </div>
+                                  </div>
+                                  <div class="item fade">
+                                      <p>Eat, Exercise, Sleep. Reduced decision fatigue can have a significant positive impact on our eating, working out, and sleeping habits. Decision fatigue occurs when we make a large number of decisions over a period of time, which can lead to mental exhaustion and reduced decision-making ability.</p>
+                                      <p>In terms of eating, decision fatigue can make it harder to choose healthy, nutrient-dense foods, as we may be more inclined to reach for convenient, feel-good, or processed options. By reducing the mental load of decision-making through personalized meal recommendations and other tools, Mind Body Minimalism can help you make healthy eating choices easier and more automatic.</p>
+                                      <p>Similarly, when it comes to exercise, it can be difficult to find and stick to a consistent routine. By providing customized workout suggestions that account for your goals, Mind Body Minimalism can help reduce the need for constant decision-making and make it easier to stay motivated and on track with your fitness goals.</p>
+                                      <p>When it comes to getting a good night sleep both apetite and athletic performance can be strongly affected. However most of us know we need to get enough sleep, but that doesn't necessariliy mean we do it. Our tools will help you get closer to a sleep routine that is appropriate for you.</p>
+                                      <p>It's important to remember you still have to put in effort to make these changes, but we can promise you that when you do choose to make the change, answers are readily available. Our tools help you make healthier choices and stick to positive habits around eating, working out, and sleeping. By taking care of our bodies, we can reduce physical and mental exhaustion, and free up resources to focus on what truly matters in our lives.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+              </main>
+          </div>
       </div>
-    </div>
+  </div>
   </body>
 
         <!-- Footer -->
 <footer class="footer bottom-container">
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    // Initially hide all items
+    document.querySelectorAll('.carousel-container .item').forEach((item) => {
+      item.style.display = 'none';
+    });
+  
+    // Then show the first item
+    if (document.querySelector('.carousel-container .item')) {
+      document.querySelector('.carousel-container .item').style.display = 'block';
+    }
+  });
+  </script>
+  
+<script src="/javascript/carousel.js"></script>
 
 </html>
