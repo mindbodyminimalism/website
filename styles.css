@@ -232,9 +232,7 @@ html {
 }
 
 .title {
-  font-size: 6vw;
-  min-font-size: 32px;
-  max-font-size: 66px;
+  font-size: 5vw;
   white-space: nowrap;
   margin: 20px;
 }
@@ -255,17 +253,23 @@ iframe {
   body {
     font-size: 18px;
   }
-  .title {
-    font-size: 36px;
-  }
 }
 
 @media screen and (max-width: 360px) {
   body {
     font-size: 14px;
   }
+}
+
+@media (min-width: 768px) {
   .title {
-    font-size: 24px;
+    font-size: 66px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 66px;
   }
 }
 
