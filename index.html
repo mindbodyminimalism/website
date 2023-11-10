@@ -18,6 +18,23 @@
         /*height: auto;    /* Automatically adjust the height to maintain aspect ratio */
       }
 
+      body {
+        background-color: black;
+      }
+
+      a {
+        color: white;
+      }
+
+      a:hover {
+        color: white;
+        text-shadow: 2px 2px 2px rgba(206, 204, 204, 0.2);
+      }
+
+      a:active {
+        color: rgb(255, 255, 255);
+      }
+
       @media (max-width: 768px) {
         img {
           padding: 3% 6%;
@@ -38,13 +55,13 @@
     <div class="row flex-center position-ref full-height">
       <div class="content links">
         <div class="row title m-b-md">
-          <img src="/media/MBM_Logo.png" alt="Image Description" />
+          <img src="/media/MBM_White_Logo.png" alt="Image Description" />
         </div>
         <div class="row container links">
-          <a href="/about.html">about</a>
-          <a href="/body/body.html">body</a>
-          <a href="/mind/mind.html">mind</a>
-          <a href="/essence/essence.html">essence</a>
+          <a href="/about.html" style="color: white;" onmouseover="this.style.color='grey';" onmouseout="this.style.color='white';">about</a>
+          <a href="/body/body.html" style="color: white;" onmouseover="this.style.color='grey';" onmouseout="this.style.color='white';">body</a>
+          <a href="/mind/mind.html" style="color: white;" onmouseover="this.style.color='grey';" onmouseout="this.style.color='white';">mind</a>
+          <a href="/essence/essence.html" style="color: white;" onmouseover="this.style.color='grey';" onmouseout="this.style.color='white';">essence</a>
         </div>
       </div>
     </div>
