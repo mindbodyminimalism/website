@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+    <title>Mind Body Minimalism</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+    <style>
+.chat-container {
+    width: 60%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.chat-box {
+    height: 400px;
+    width: 500px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+#user-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+}
+
+#send-button {
+    width: 60px;
+    height: 38px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body style="background-color: rgb(99, 97, 97);">
+    <div class="top-container">
+        <div class="flex-center position-ref low-height">
+            <div class="content">
+                <div class="title m-b-md">Chatty</div>
+                <div class="row container links">
+                    <a href="/index.html">HOME</a>
+                    <a href="https://chat.openai.com/g/g-yiW4jjDEa-mind-body-minimalism">ChatGPT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row container">
+        <div class="sub-col">
+            <div class="chat-container">
+                <div id="chat-box" class="chat-box"></div>
+                <input type="text" id="user-input" placeholder="Type your message here..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('send-button').addEventListener('click', function() {
+    let userInput = document.getElementById('user-input').value;
+    if (userInput.trim() !== '') {
+        sendMessageToBot(userInput);
+    }
+});
+
+function sendMessageToBot(message) {
+    document.getElementById('send-button').addEventListener('click', function() {
+    let userInput = document.getElementById('user-input').value;
+    if (userInput.trim() !== '') {
+        sendMessageToBot(userInput);
+        document.getElementById('user-input').value = ''; // Clear input after sending
+    }
+});
+
+function sendMessageToBot(message) {
+    // Display user message in chat
+    let chatBox = document.getElementById('chat-box');
+    chatBox.innerHTML += `<div>User: ${message}</div>`;
+
+    // Replace this URL with your API endpoint
+    const apiUrl = 'https://chat.openai.com/g/g-yiW4jjDEa-mind-body-minimalism';
+
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // Add any other headers like authorization tokens here
+        },
+        body: JSON.stringify({ message: message })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Assuming 'data' contains the bot's response
+        let botResponse = data.reply; // Adjust this depending on your API's response structure
+        chatBox.innerHTML += `<div>Bot: ${botResponse}</div>`;
+        chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the latest message
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        chatBox.innerHTML += `<div>Error while communicating with the bot</div>`;
+    });
+}
+
+
+    </script>
+</body>
+</html>
