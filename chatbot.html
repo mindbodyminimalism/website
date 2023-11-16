@@ -56,61 +56,10 @@
     </div>
     <div class="row container">
         <div class="sub-col">
-            <div class="chat-container">
-                <div id="chat-box" class="chat-box"></div>
-                <input type="text" id="user-input" placeholder="Type your message here..." />
-                <button id="send-button">Send</button>
+                <iframe src="http://127.0.0.1:7860" width="100%" height="600"></iframe>
             </div>
         </div>
     </div>
 
-    <script>
-        document.getElementById('send-button').addEventListener('click', function() {
-    let userInput = document.getElementById('user-input').value;
-    if (userInput.trim() !== '') {
-        sendMessageToBot(userInput);
-    }
-});
-
-function sendMessageToBot(message) {
-    document.getElementById('send-button').addEventListener('click', function() {
-    let userInput = document.getElementById('user-input').value;
-    if (userInput.trim() !== '') {
-        sendMessageToBot(userInput);
-        document.getElementById('user-input').value = ''; // Clear input after sending
-    }
-});
-
-function sendMessageToBot(message) {
-    // Display user message in chat
-    let chatBox = document.getElementById('chat-box');
-    chatBox.innerHTML += `<div>User: ${message}</div>`;
-
-    // Replace this URL with your API endpoint
-    const apiUrl = 'https://chat.openai.com/g/g-yiW4jjDEa-mind-body-minimalism';
-
-    fetch(apiUrl, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            // Add any other headers like authorization tokens here
-        },
-        body: JSON.stringify({ message: message })
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Assuming 'data' contains the bot's response
-        let botResponse = data.reply; // Adjust this depending on your API's response structure
-        chatBox.innerHTML += `<div>Bot: ${botResponse}</div>`;
-        chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the latest message
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        chatBox.innerHTML += `<div>Error while communicating with the bot</div>`;
-    });
-}
-
-
-    </script>
 </body>
 </html>
