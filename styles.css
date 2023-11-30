@@ -22,6 +22,11 @@ html {
   font-size: medium;
 }
 
+.icon-top-left {
+  position: absolute;
+  z-index: 100;
+}
+
 #particles-js {
   position: absolute;
   top: 0;
