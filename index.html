@@ -49,7 +49,7 @@
 <div class="row flex-center position-ref full-height">
     <div class="content links">
         <div class="row title m-b-md">
-            <img src="/media/MBM_White_Logo.png" alt="Image Description" />
+            <img src="/media/MBM_White_Logo.png" alt="Image Description" id="logo" />
         </div>
         <div class="row container links">
             <a href="/about.html" style="color: white; z-index: 4; " onmouseover="this.style.color='grey';" onmouseout="this.style.color='white';">about</a>
@@ -67,17 +67,20 @@
 
 <!-- Audio element -->
 <audio id="background-audio">
-  <source src="/audio/piano_intro.mp3" type="audio/mpeg">
+  <source src="/audio/intro.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
+<!-- Black background overlay -->
+<div id="overlay"></div>
 
 
 <script>
-    // JavaScript to toggle mute/unmute
-    const soundIcon = document.getElementById('sound-icon');
+// JavaScript to toggle mute/unmute and the overlay
+const soundIcon = document.getElementById('sound-icon');
 const soundToggle = document.getElementById('sound-toggle');
 const backgroundAudio = document.getElementById('background-audio');
+const overlay = document.getElementById('overlay');
 
 let isAudioPlaying = false; // Track if audio is playing
 
@@ -88,12 +91,15 @@ soundIcon.addEventListener('click', () => {
         isAudioPlaying = true;
         soundToggle.classList.remove('fa-volume-xmark');
         soundToggle.classList.add('fa-volume-up');
+        overlay.style.opacity = 0; // Hide the overlay
     } else {
         backgroundAudio.muted = true;
         soundToggle.classList.remove('fa-volume-up');
         soundToggle.classList.add('fa-volume-xmark');
+        overlay.style.opacity = 0.5; // Show the overlay
     }
 });
+
 
 </script>
 
