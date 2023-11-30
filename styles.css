@@ -29,6 +29,28 @@ html {
   z-index: 100; 
 }
 
+/* Position and hide the dropdown content by default */
+.icon-top-left .dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%; /* Position it below the icon */
+  z-index: 200; /* Ensure it's above other content */
+  /* Add more styles as needed (background, padding, etc.) */
+}
+
+/* Style for the dropdown links */
+.icon-top-left .dropdown-content a {
+  display: block;
+  /* Add more link styles as needed (padding, text-decoration, etc.) */
+}
+
+/* Show the dropdown content on hover */
+.icon-top-left:hover .dropdown-content {
+  display: block;
+}
+
+
 #particles-js {
   position: absolute;
   top: 0;
