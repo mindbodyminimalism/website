@@ -128,7 +128,6 @@
               isAudioPlaying = true;
               soundToggle.classList.remove('fa-volume-xmark');
               soundToggle.classList.add('fa-volume-up');
-              overlay.style.opacity = 0; // Hide the overlay
           } else {
               backgroundAudio.muted = true;
               soundToggle.classList.remove('fa-volume-up');
@@ -136,11 +135,8 @@
               overlay.style.opacity = 0.5; // Show the overlay
           }
       });
-      
-      
       </script>
       
-      <script src="javascript/particleeffect.js"></script>
 
   </body>
 
