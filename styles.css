@@ -24,7 +24,9 @@ html {
 
 .icon-top-left {
   position: absolute;
-  z-index: 100;
+  top: 15px;
+  left: 15px;
+  z-index: 100; 
 }
 
 #particles-js {
