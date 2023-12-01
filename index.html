@@ -20,26 +20,6 @@
             background-color: black;
             position: relative; /* Add this to make positioning easier */
         }
-
-        /* Add the CSS for the sound icon */
-        #sound-icon {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 4;
-        }
-
-        #sound-icon i {
-            font-size: 24px;
-        }
     </style>
     <script src="/javascript/particles.js"></script>
 </head>
@@ -62,7 +42,7 @@
 
 <!-- Sound icon -->
 <div id="sound-icon">
-  <i id="sound-toggle" class="fa-solid fa-volume-up"></i> <!-- Initial icon -->
+  <i id="sound-toggle" class="fa-solid fa-play"></i> <!-- Initial icon -->
 </div>
 
 <!-- Audio element -->

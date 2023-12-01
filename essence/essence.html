@@ -23,26 +23,6 @@
           background-color: black;
           position: relative; /* Add this to make positioning easier */
       }
-
-      /* Add the CSS for the sound icon */
-      #sound-icon {
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          background-color: rgba(255, 255, 255, 0.2);
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          z-index: 4;
-      }
-
-      #sound-icon i {
-          font-size: 24px;
-      }
   </style>
     <link href="/styles.css" rel="stylesheet" />
   </head>
@@ -110,8 +90,8 @@
     </div>
 
 <!-- Sound icon -->
-<div id="sound-icon">
-  <i id="sound-toggle" class="fa-solid fa-volume-up"></i> <!-- Initial icon -->
+<div id="sound-icon-dark">
+  <i id="sound-toggle" class="fa-solid fa-play"></i> <!-- Initial icon -->
 </div>
 
 <!-- Audio element -->
@@ -122,10 +102,9 @@
 
     <script>
       // JavaScript to toggle mute/unmute and the overlay
-      const soundIcon = document.getElementById('sound-icon');
+      const soundIcon = document.getElementById('sound-icon-dark');
       const soundToggle = document.getElementById('sound-toggle');
       const backgroundAudio = document.getElementById('background-audio');
-      const overlay = document.getElementById('overlay');
       
       let isAudioPlaying = false; // Track if audio is playing
       
@@ -140,7 +119,6 @@
               backgroundAudio.muted = true;
               soundToggle.classList.remove('fa-volume-up');
               soundToggle.classList.add('fa-volume-xmark');
-              overlay.style.opacity = 0.5; // Show the overlay
           }
       });
       </script>
