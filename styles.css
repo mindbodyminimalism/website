@@ -224,13 +224,16 @@ html {
   text-decoration: none; /* Removes underline from links */
 }
 
+#navbar-text {
+  color: rgb(180, 178, 178);
+  padding: 20px 20px;
+  text-align: right;
+  font-size: large;
+}
+
 #navbar a:hover {
   background-color: #ddd; /* Changes background on hover */
   color: black; /* Changes text color on hover */
-}
-
-.navbar {
-  margin-top: 20px;
 }
 
 .navbar ul {
@@ -486,6 +489,21 @@ main section {
         cursor: pointer;
         z-index: 4;
     }
+
+    #sound-icon-dark {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(48, 47, 47, 0.2);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 4;
+  }
 
     #sound-icon i {
         font-size: 24px;
