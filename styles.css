@@ -237,11 +237,30 @@ html {
 }
 
 .low-height {
-  height: 15vh;
+  height: 30vh;
 }
 
 .m-b-md {
   margin-bottom: 30px;
+}
+
+#navbar {
+  background-color: black; /* Black background color */
+  overflow: hidden; /* Ensures the bar does not affect other elements */
+}
+
+#navbar a {
+  float: left; /* Aligns links to the left */
+  display: block; /* Makes each link a block element */
+  color: white; /* Text color */
+  text-align: center; /* Centers text in the link */
+  padding: 14px 16px; /* Padding inside each link */
+  text-decoration: none; /* Removes underline from links */
+}
+
+#navbar a:hover {
+  background-color: #ddd; /* Changes background on hover */
+  color: black; /* Changes text color on hover */
 }
 
 .navbar {
@@ -306,7 +325,7 @@ html {
 }
 
 .title {
-  font-size: 1vw;
+  font-size: 5vw;
   white-space: nowrap;
   text-align: center;
 }
