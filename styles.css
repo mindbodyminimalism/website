@@ -23,40 +23,6 @@ html {
   font-size: medium;
 }
 
-.icon-top-left {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 100; 
-}
-
-.icon-top-left .icon-text {
-  margin-left: 30px;
-  font-size: 72px;
-}
-
-/* Position and hide the dropdown content by default */
-.icon-top-left .dropdown-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%; /* Position it below the icon */
-  z-index: 200; /* Ensure it's above other content */
-  /* Add more styles as needed (background, padding, etc.) */
-}
-
-/* Style for the dropdown links */
-.icon-top-left .dropdown-content a {
-  display: block;
-  /* Add more link styles as needed (padding, text-decoration, etc.) */
-}
-
-/* Show the dropdown content on hover */
-.icon-top-left:hover .dropdown-content {
-  display: block;
-}
-
-
 #particles-js {
   position: absolute;
   top: 0;
@@ -75,7 +41,7 @@ html {
 }
 
 .glow:hover {
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 #logo {
@@ -363,6 +329,19 @@ iframe {
 @media (min-width: 1200px) {
   .title {
     font-size: 50px;
+  }
+}
+
+.icon-size {
+  width: 100px;
+  height: 100px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .icon-size {
+    width: 80px; /* Adjust the width for smaller screens */
+    height: 80px; /* Adjust the height for smaller screens */
   }
 }
 
