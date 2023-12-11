@@ -251,8 +251,69 @@ html {
   text-decoration: none;
 }
 
-.pic-container {
+.pic-row {
   display: flex;
+  align-items: stretch; /* Make the items stretch vertically */
+  justify-content: center;
+  width: 100%;
+}
+
+#horizontal-bar {
+  display: flex;
+  align-items: stretch; /* Make the items stretch vertically */
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background-color: rgb(90, 125, 138);
+}
+
+.box {
+  flex: 1;
+  max-width: 600px;
+  background-color: rgb(116, 161, 178);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text alignment */
+}
+
+  /* Style for the image to take up the entire box */
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire box */
+}
+
+.box h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.box p {
+  margin: 10px 76px;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+/* Media query for screens with a max-width of 600px */
+@media (max-width: 720px) {
+  #horizontal-bar {
+      flex-direction: column; /* Stack children vertically */
+  }
+
+  .box {
+      width: 100%; /* Each box takes full width */
+      height: 50px; /* Adjust height as needed */
+  }
+}
+
+
+.pic-container {
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between; /* Change to 'space-between' to keep equal margins between columns */
   max-width: 1000px;
   margin: 0 auto; /* This will center the entire container horizontally */
@@ -375,13 +436,16 @@ iframe {
 
 
 .bottom-container {
+  /*
   -webkit-box-shadow: 0 -5px 6px -6px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 -5px 6px -6px rgba(0, 0, 0, 0.5);
   box-shadow: 0 -5px 6px -6px rgba(0, 0, 0, 0.5);
   max-width: 1000px; /* Adjust the value to your desired maximum width */
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto; /* Center horizontally 
+  */
 }
  
+
 /* carousel css */
 
 main section {
