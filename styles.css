@@ -251,6 +251,8 @@ html {
   text-decoration: none;
 }
 
+
+
 .pic-row {
   display: flex;
   align-items: stretch; /* Make the items stretch vertically */
