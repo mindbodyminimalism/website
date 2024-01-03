@@ -311,6 +311,36 @@ html {
   }
 }
 
+.button-container {
+  padding: 20px;
+  color: white;
+}
+
+.button-link {
+  background-color: #000000; /* Blue background color */
+  color: white;             /* White text color */
+  border: none;     
+  margin: auto;        /* Remove border */
+  padding: 10px 20px;       /* Adjust padding for spacing */
+  text-decoration: none;    /* Remove underlines from the link */
+  cursor: pointer;          /* Change cursor to pointer on hover */
+  border-radius: 5px;
+}
+
+.button-link a {
+  color: white; /* Text color for the anchor link inside the button */
+  font-weight: bold;
+}
+
+.button-link:hover {
+  background-color: #616263; /* Background color on hover */
+  color: white; 
+}
+
+.button-link:active {
+  background-color: #383838; /* Background color when pressed */
+  color: white; 
+}
 
 .pic-container {
   display: flex; 
