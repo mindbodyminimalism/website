@@ -723,3 +723,21 @@ main section {
         font-size: 24px;
     }
 
+/* Add keyframes for the glowing effect */
+@keyframes glowing {
+  0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+}
+
+/* Apply the animation to your icons */
+#sound-icon, #sound-icon-dark {
+  animation: glowing 2s infinite; /* 2s duration, infinite repetition */
+  animation-delay: 1s; /* Delay to not start immediately */
+}
+
+/* Ensure the icon is visible and adjust as needed */
+#sound-icon i, #sound-icon-dark i {
+  color: white; /* Change if needed */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Optional: adds more glow to the icon itself */
+}
