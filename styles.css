@@ -253,13 +253,6 @@ html {
 
 
 
-.pic-row {
-  display: flex;
-  align-items: stretch; /* Make the items stretch vertically */
-  justify-content: center;
-  width: 100%;
-}
-
 #horizontal-bar {
   display: flex;
   align-items: stretch; /* Make the items stretch vertically */
@@ -267,6 +260,26 @@ html {
   width: 100%;
   min-height: 300px;
   background-color: rgb(90, 125, 138);
+}
+
+#horizontal-row {
+  display: flex;
+  align-items: stretch; /* Make the items stretch vertically */
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background-color: rgb(90, 125, 138);
+  padding-top: 2%;
+}
+
+#horizontal-row-2 {
+  display: flex;
+  align-items: stretch; /* Make the items stretch vertically */
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background-color: rgb(90, 125, 138);
+  padding-bottom: 5%;
 }
 
 .box {
@@ -289,13 +302,13 @@ html {
 
 .box h3 {
   margin: 10px 0;
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: #fff;
 }
 
 .box p {
   margin: 10px 76px;
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #fff;
 }
 
@@ -310,6 +323,97 @@ html {
       height: 50px; /* Adjust height as needed */
   }
 }
+
+@media (max-width: 720px) {
+  #horizontal-row {
+      flex-direction: column; /* Stack children vertically */
+      align-items: center;
+      justify-content: center;
+  }
+
+  .box-2 {
+      width: 100%; /* Each box takes full width */
+      height: 50px; /* Adjust height as needed */
+  }
+}
+
+@media (max-width: 720px) {
+  #horizontal-row-2 {
+      flex-direction: column; /* Stack children vertically */
+      align-items: center;
+      justify-content: center;
+      display: none;
+  }
+
+  .box-3 {
+      width: 100%; /* Each box takes full width */
+      height: 50px; /* Adjust height as needed */
+  }
+}
+
+
+.box-2 {
+  flex: 1;
+  max-width: 400px;
+  background-color: rgb(116, 161, 178);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text alignment */
+  border-top: 1px solid rgba(0, 0, 0, 1); /* Top border */
+  border-bottom: 1px solid rgba(0, 0, 0, 0); /* Bottom border */
+  border-right: .5px solid rgba(0, 0, 0, 1); /* Right border */
+  border-left: .5px solid rgba(0, 0, 0, 1); /* Left border */
+}
+
+  /* Style for the image to take up the entire box */
+  .box-2 img {
+    width: 75%;        /* Make the image fill the entire width of the box */
+    height: auto;       /* Set height to auto to maintain aspect ratio */
+    object-fit: cover;  /* Cover the box, may crop the image */
+  }
+  
+
+.box-2 h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.box-2 p {
+  margin: 10px 76px;
+  font-size: 0.9em;
+  color: #000000;
+}
+
+
+.box-3 {
+  flex: 1;
+  max-width: 400px;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text alignment */
+  border-top: 1px solid rgba(0, 0, 0, 0); /* Top border */
+  border-bottom: 1px solid rgba(0, 0, 0, 1); /* Bottom border */
+  border-right: 1px solid rgba(0, 0, 0, 1); /* Right border */
+  border-left: 1px solid rgba(0, 0, 0, 1); /* Left border */
+}
+
+.box-3 h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.box-3 p {
+  margin: 10px 76px;
+  font-size: 1.2em;
+  color: #000000;
+}
+
 
 .button-container {
   padding: 20px;
@@ -342,18 +446,6 @@ html {
   color: white; 
 }
 
-.pic-container {
-  display: flex; 
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between; /* Change to 'space-between' to keep equal margins between columns */
-  max-width: 1000px;
-  margin: 0 auto; /* This will center the entire container horizontally */
-  padding: 0 4vw; /* Set the left and right padding to create the desired margins */
-  position: relative; /* This ensures that the z-index is applied correctly */
-  z-index: 2;
-}
-
 .top-container {
   /* Adjust the values below to create the desired shadow effect */
   -webkit-box-shadow: 0 5px 6px -6px rgba(0, 0, 0, 0.5);
@@ -363,10 +455,36 @@ html {
   margin: 0 auto; /* Center horizontally */
 }
 
+
+.pic-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto; /* This will center the entire container horizontally */
+  position: relative; /* This ensures that the z-index is applied correctly */
+  z-index: 2;
+  background-color:#1e67b1;
+}
+
 .pic-col {
   box-sizing: border-box;
   flex: 1; /* Allow the columns to grow and shrink equally */
+  padding: 2vw;
+  background-color: #a52222;
+}
+
+.pic-row {
+  display: flex;
+  align-items: stretch; /* Make the items stretch vertically */
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.about-pic-col {
+  box-sizing: border-box;
+  flex: 1; /* Allow the columns to grow and shrink equally */
   padding: 15px;
+  padding: 2vw;
   text-align: center;
 }
 
