@@ -583,7 +583,7 @@ main section {
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        z-index: 100000000000;
+        z-index: 1000;
     }
 
     #sound-icon-dark {
@@ -598,9 +598,10 @@ main section {
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      z-index: 100000000000;
+      z-index: 1000;
   }
 
     #sound-icon i {
         font-size: 24px;
     }
+
