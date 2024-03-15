@@ -35,7 +35,7 @@
       </h3>
       <p>
         Mind Body Minimalism is a lifestyle organization dedicated to guiding individuals towards a simpler, happier,
-                                      and healthier life.
+        and healthier life.
       </p>
     </div>
     <div class="box">
@@ -109,37 +109,38 @@
 
 <!-- Sound icon -->
 <div id="sound-icon-dark">
-  <i id="sound-toggle" class="fa-solid fa-play"></i> <!-- Initial icon -->
+  <i id="sound-toggle" class="fa-solid fa-play"></i>
 </div>
 
-<!-- Audio element -->
-<audio id="background-audio">
-  <source src="/audio/About_Explained.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<!-- Video element -->
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <video id="background-video" width="560" height="315" style="max-width: 100%; height: auto;" loop>
+    <source src="https://youtu.be/S1M_bMVRcyo" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
-    <script>
-      // JavaScript to toggle mute/unmute and the overlay
-      const soundIcon = document.getElementById('sound-icon-dark');
-      const soundToggle = document.getElementById('sound-toggle');
-      const backgroundAudio = document.getElementById('background-audio');
-      
-      let isAudioPlaying = false; // Track if audio is playing
-      
-      soundIcon.addEventListener('click', () => {
-          if (backgroundAudio.muted || !isAudioPlaying) {
-              backgroundAudio.muted = false;
-              backgroundAudio.play(); // Start playing audio
-              isAudioPlaying = true;
-              soundToggle.classList.remove('fa-volume-xmark');
-              soundToggle.classList.add('fa-volume-up');
-          } else {
-              backgroundAudio.muted = true;
-              soundToggle.classList.remove('fa-volume-up');
-              soundToggle.classList.add('fa-volume-xmark');
-          }
-      });
-      </script>
+<script>
+const soundIcon = document.getElementById('sound-icon-dark');
+const soundToggle = document.getElementById('sound-toggle');
+const backgroundVideo = document.getElementById('background-video');
+
+let isVideoPlaying = false; // Track if video is playing
+
+soundIcon.addEventListener('click', () => {
+    if (!isVideoPlaying) {
+        backgroundVideo.play(); // Play video
+        isVideoPlaying = true;
+        soundToggle.classList.remove('fa-play');
+        soundToggle.classList.add('fa-stop');
+    } else {
+        backgroundVideo.pause(); // Pause video
+        isVideoPlaying = false;
+        soundToggle.classList.remove('fa-stop');
+        soundToggle.classList.add('fa-play');
+    }
+});
+</script>
 
   </body>
 
