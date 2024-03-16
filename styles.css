@@ -41,8 +41,14 @@ html {
 }
 
 .glow:hover {
+  animation: none; /* Stops the glow animation */
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
+
+.icon-clicked {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+}
+
 
 #logo {
   z-index: 100;
@@ -811,3 +817,21 @@ main section {
   color: white; /* Change if needed */
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Optional: adds more glow to the icon itself */
 }
+
+.glow {
+  animation: glowing 1.5s ease-out 1;
+  animation-delay: 1s; /* Adjust or remove this delay as needed */
+}
+
+/* Effect when an icon is clicked */
+.glow:active, .icon-size:active {
+  transform: scale(1.1); /* Makes the icon slightly larger */
+  filter: brightness(1.5); /* Makes the icon brighter */
+}
+
+/* Additional effect for when the icon remains clicked */
+.clicked {
+  transform: scale(1.1); /* Keeps the icon slightly larger */
+  filter: brightness(1.5); /* Keeps the icon brighter */
+}
+

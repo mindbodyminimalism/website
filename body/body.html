@@ -184,6 +184,20 @@
         }
       });
       </script>
+
+// Add event listeners to all elements with 'glow' class
+document.querySelectorAll('.glow').forEach(item => {
+    item.addEventListener('click', function() {
+        // Add 'clicked' class to the element
+        this.classList.add('clicked');
+
+        // Remove 'clicked' class after 500 milliseconds
+        setTimeout(() => {
+            this.classList.remove('clicked');
+        }, 500);
+    });
+});
+
       
     <script src="/javascript/carousel.js"></script>
     <script src="/script.js"></script>
