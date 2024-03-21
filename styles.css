@@ -481,6 +481,28 @@ html {
   padding: 2%;
 }
 
+.full-box {
+  background-color: rgb(230, 220, 220);
+  flex: 1; /* Takes up 2 parts of the space */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 2%;
+  min-height: 250px;
+}
+
+.full-box:hover {
+  background-color: #b6b4b4; /* Change as desired for hover effect */
+  cursor: pointer; /* Change mouse cursor to indicate clickable */
+  box-shadow: 
+  inset 0 5px 5px -5px rgba(0, 0, 0, .5), /* Top shadow */
+  inset 0 -5px 5px -5px rgba(0, 0, 0, .5), /* Bottom shadow */
+  inset 5px 0 5px -5px rgba(0, 0, 0, .5), /* Right shadow */
+  inset -5px 0 5px -5px rgba(0, 0, 0, .5); /* Left shadow */
+}
+
 /* Add this media query at the end of your existing styles */
 @media (max-width: 768px) {
   .leftrightrowcontainer {
