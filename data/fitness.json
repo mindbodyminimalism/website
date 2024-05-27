@@ -73,6 +73,94 @@
         },
         {
             "id": 2,
+            "name": "3 Day Cardio Training",
+            "workout_days": 3,
+            "resistance_training": false,
+            "cardio": true,
+            "yoga": false,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Rest"
+            },
+            "Day 4": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Rest"
+            },
+            "Day 6": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 3,
+            "name": "3 Days of Yoga",
+            "workout_days": 3,
+            "resistance_training": false,
+            "cardio": false,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 3": {
+                "name": "Rest"
+            },
+            "Day 4": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 5": {
+                "name": "Rest"
+            },
+            "Day 6": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 4,
             "name": "3 Day Resistance Training and Cardio",
             "workout_days": 3,
             "resistance_training": true,
@@ -152,7 +240,140 @@
             }
         },
         {
-            "id": 3,
+            "id": 5,
+            "name": "3 Day Resistance Training and Yoga",
+            "workout_days": 3,
+            "resistance_training": true,
+            "cardio": false,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Push (Chest, Shoulders, Triceps)",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Rest"
+            },
+            "Day 4": {
+                "name": "Pull (Back, Biceps)",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Rest"
+            },
+            "Day 6": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 6,
+            "name": "3 Days of Cardio and Yoga",
+            "workout_days": 3,
+            "resistance_training": false,
+            "cardio": true,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15-30 minutes"
+                    ],
+                    "Yoga": [
+                        "15- 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 3": {
+                "name": "Rest"
+            },
+            "Day 4": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15-30 minutes"
+                    ],
+                    "Yoga": [
+                        "15- 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 5": {
+                "name": "Rest"
+            },
+            "Day 6": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15-30 minutes"
+                    ],
+                    "Yoga": [
+                        "15- 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 7,
             "name": "3 Day Resistance, Cardio, and Yoga Training",
             "workout_days": 3,
             "resistance_training": true,
@@ -174,6 +395,12 @@
                     ],
                     "Triceps": [
                         "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
                     ],
                     "Abs": [
                         "Planks - Hold for 30-60 seconds, 3 sets"
@@ -199,6 +426,12 @@
                     "Lower Back": [
                         "Hyperextensions - 3 sets of 12 reps"
                     ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
                     "Run": [
                         "Run 10 - 15 minutes"
                     ]
@@ -210,20 +443,8 @@
             "Day 6": {
                 "name": "Legs and Glutes",
                 "Instructions": {
-                    "Quads": [
-                        "Leg Press - 4 sets of 8-10 reps"
-                    ],
-                    "Hamstrings": [
-                        "Leg Curls (using a machine) - 3 sets of 12 reps"
-                    ],
-                    "Glutes": [
-                        "Hip Abductor - 3 sets of 12 reps"
-                    ],
-                    "Calves": [
-                        "Calf Raises - 4 sets of 10-12 reps"
-                    ],
-                    "Run": [
-                        "Run 10 - 15 minutes"
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
                     ]
                 }
             },
@@ -232,7 +453,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 8,
             "name": "4 Day Short Plan",
             "workout_days": 4,
             "resistance_training": true,
@@ -302,6 +523,983 @@
             },
             "Day 6": {
                 "name": "Rest"
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 9,
+            "name": "4 Day Cardio Training",
+            "workout_days": 4,
+            "resistance_training": false,
+            "cardio": true,
+            "yoga": false,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 4": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Rest"
+            },
+            "Day 6": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 10,
+            "name": "4 Days of Yoga",
+            "workout_days": 4,
+            "resistance_training": false,
+            "cardio": false,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 3": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                } 
+            },
+            "Day 4": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 5": {
+                "name": "Rest"
+            },
+            "Day 6": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 11,
+            "name": "4 Day Resistance Training and Cardio",
+            "workout_days": 4,
+            "resistance_training": true,
+            "cardio": true,
+            "yoga": false,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 1": {
+                "name": "Chest and Triceps",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 2": {
+                "name": "Rest"
+            },
+            "Day 3": {
+                "name": "Back and Biceps",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 4": {
+                "name": "Shoulders and Abs",
+                "Instructions": {
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ]
+                }
+            },
+            "Day 6": {
+                "name": "Rest"
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 12,
+            "name": "4 Day Resistance Training and Yoga",
+            "workout_days": 4,
+            "resistance_training": true,
+            "cardio": false,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Push (Chest, Shoulders, Triceps)",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Rest"
+            },
+            "Day 4": {
+                "name": "Pull (Back, Biceps)",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Rest"
+            },
+            "Day 6": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }
+            }
+        },
+        {
+            "id": 13,
+            "name": "4 Days of Cardio and Yoga",
+            "workout_days": 4,
+            "resistance_training": false,
+            "cardio": true,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15 - 30 minutes"
+                    ],
+                    "Yoga": [
+                        "15 - 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 3": {
+                "name": "Run",
+                "Instructions": {
+                    "Run": [
+                        "Run 30 - 60 minutes"
+                    ]
+                }   
+            },
+            "Day 4": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15 - 30 minutes"
+                    ],
+                    "Yoga": [
+                        "15 - 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 5": {
+                "name": "Yoga",
+                "Instructions": {
+
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }   
+            },
+            "Day 6": {
+                "name": "Rest" 
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 14,
+            "name": "4 Day Resistance, Cardio, and Yoga Training",
+            "workout_days": 4,
+            "resistance_training": true,
+            "cardio": true,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Push (Chest, Shoulders, Triceps)",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Rest"
+            },
+            "Day 4": {
+                "name": "Pull (Back, Biceps)",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 6": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 15,
+            "name": "5 Day Resistance Training",
+            "workout_days": 5,
+            "resistance_training": true,
+            "cardio": false,
+            "yoga": false,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Chest and Triceps",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Back and Biceps",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ]
+                }
+            },
+            "Day 4": {
+                "name": "Shoulders and Abs",
+                "Instructions": {
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ]
+                }
+            },
+            "Day 6": {
+                "name": "Full Body",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps"
+                    ],
+                    "Biceps and Back:": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Tricep": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 16,
+            "name": "5 Day Cardio Training",
+            "workout_days": 5,
+            "resistance_training": false,
+            "cardio": true,
+            "yoga": false,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 4": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 6": {
+                "name": "Run",
+                "Instructions": {
+                    "30-Minute Run/Jog/Walk": [
+                        "Maintain your fastest steady pace for the entire duration."
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 17,
+            "name": "5 Days of Yoga",
+            "workout_days": 5,
+            "resistance_training": false,
+            "cardio": false,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 3": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }   
+            },
+            "Day 4": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 5": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }   
+            },
+            "Day 6": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 18,
+            "name": "5 Day Resistance Training and Cardio",
+            "workout_days": 5,
+            "resistance_training": true,
+            "cardio": true,
+            "yoga": false,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Chest and Triceps",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Back and Biceps",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 4": {
+                "name": "Shoulders and Abs",
+                "Instructions": {
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 6": {
+                "name": "Full Body",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps"
+                    ],
+                    "Biceps and Back:": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Tricep": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 19,
+            "name": "5 Day Resistance Training and Yoga",
+            "workout_days": 5,
+            "resistance_training": true,
+            "cardio": false,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Push (Chest, Shoulders, Triceps)",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }   
+            },
+            "Day 4": {
+                "name": "Pull (Back, Biceps)",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Yoga",
+                "Instructions": {
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }   
+            },
+            "Day 6": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ]
+                }
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 20,
+            "name": "4 Days of Cardio and Yoga",
+            "workout_days": 5,
+            "resistance_training": false,
+            "cardio": true,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15 - 30 minutes"
+                    ],
+                    "Yoga": [
+                        "15 - 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 3": {
+                "name": "Run",
+                "Instructions": {
+                    "Run": [
+                        "Run 30 - 60 minutes"
+                    ]
+                }   
+            },
+            "Day 4": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15 - 30 minutes"
+                    ],
+                    "Yoga": [
+                        "15 - 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 5": {
+                "name": "Yoga",
+                "Instructions": {
+
+                    "Yoga": [
+                        "30 - 60 minute Session of Yoga"
+                    ]
+                }   
+            },
+            "Day 6": {
+                "name": "Run and Yoga",
+                "Instructions": {
+                    "Run": [
+                        "Run 15 - 30 minutes"
+                    ],
+                    "Yoga": [
+                        "15 - 30 minute Session of Yoga"
+                    ]
+                }    
+            },
+            "Day 7": {
+                "name": "Rest"
+            }
+        },
+        {
+            "id": 21,
+            "name": "5 Day Resistance, Cardio, and Yoga Training",
+            "workout_days": 5,
+            "resistance_training": true,
+            "cardio": true,
+            "yoga": true,
+            "Day 1": {
+                "name": "Rest"
+            },
+            "Day 2": {
+                "name": "Chest and Triceps",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps",
+                        "Chest Fly Machine - 3 sets of 12 reps"
+                    ],
+                    "Triceps": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 3": {
+                "name": "Back and Biceps",
+                "Instructions": {
+                    "Back": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Biceps": [
+                        "Dumbbell Curls - 3 sets of 10 reps"
+                    ],
+                    "Lower Back": [
+                        "Hyperextensions - 3 sets of 12 reps"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 4": {
+                "name": "Shoulders and Abs",
+                "Instructions": {
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps",
+                        "Dumbbell Shrugs - 3 sets of 10 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
+            },
+            "Day 5": {
+                "name": "Legs and Glutes",
+                "Instructions": {
+                    "Quads": [
+                        "Leg Press - 4 sets of 8-10 reps"
+                    ],
+                    "Hamstrings": [
+                        "Leg Curls (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Glutes": [
+                        "Hip Abductor - 3 sets of 12 reps"
+                    ],
+                    "Calves": [
+                        "Calf Raises - 4 sets of 10-12 reps"
+                    ],
+                    "Yoga": [
+                        "10 - 20 minute Session of Yoga"
+                    ]
+                }
+            },
+            "Day 6": {
+                "name": "Full Body",
+                "Instructions": {
+                    "Chest": [
+                        "Bench Press - 4 sets of 8-10 reps"
+                    ],
+                    "Biceps and Back:": [
+                        "Pulldown Machine - 4 sets of 8-10 reps",
+                        "Seated Rows (using a machine) - 3 sets of 12 reps"
+                    ],
+                    "Tricep": [
+                        "Tricep Press - 3 sets of 12 reps"
+                    ],
+                    "Shoulders": [
+                        "Lateral Raises - 3 sets of 12 reps"
+                    ],
+                    "Abs": [
+                        "Planks - Hold for 30-60 seconds, 3 sets"
+                    ],
+                    "Run": [
+                        "Run 10 - 15 minutes"
+                    ]
+                }
             },
             "Day 7": {
                 "name": "Rest"
